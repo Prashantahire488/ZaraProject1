@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #products {
+        margin: 5% 5% 10% 5%;
+        border: 1px solid black;
+        height: 600px;
+
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-gap: 5%;
+        justify-content: center;
+    }
+
+    img {
+        width: 80%;
+    }
+</style>
+
+<body>
+    <h1>LocalStorage</h1>
+
+    <a href="cart.html"><button>Go to Cart</button></a>
+
+    <div id = "products"></div>
+    
+</body>
+</html>
+
+<script>
+    // array of objects
+let data = [
+    {
+      img1:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_1_1_1.jpg?ts=1632485315839",
+      img2:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_2_1_1.jpg?ts=1632473546580",
+      img3:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_2_2_1.jpg?ts=1632473557435",
+      img4:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_2_3_1.jpg?ts=1632473552490",
+      img5:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_6_1_1.jpg?ts=1631869799256",
+      img6:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_6_2_1.jpg?ts=1631869789916",
+      img7:"https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_6_3_1.jpg?ts=1631870050142",
+    },
+    
+  ];
+    
+    // data.img1 = "https://static.zara.net/photos///2021/I/0/1/p/2674/817/800/2/w/563/2674817800_6_3_1.jpg?ts=1631870050142";
+
+    //1. Run a foreach loop on products data and console log indivisual product names
+    
+    //2. append these data on DOM
+
+    //2.1 createElement
+
+
+    let parent = document.getElementById("products");
+
+
+    function showProducts(){
+    data.forEach(function (product){
+        // console.log(product.name);
+
+        let div = document.createElement("div");
+
+        let img = document.createElement("img");
+
+        img.src = product.img1;
+
+        let product_price = document.createElement("p");
+
+        product_price.textContent = product.price;
+
+        let product_name = document.createElement("p");
+
+        product_name.textContent = product.name;
+
+        let addtocart_btn = document.createElement("button");
+        
+        addtocart_btn.innerText = "Add to Cart";
+
+
+        addtocart_btn.onclick = function(){
+            addtoCart(product);
+        };
+
+
+        div.append(img, product_name, product_price, addtocart_btn);
+
+        parent.append(div);
+    });
+}
+
+showProducts();
+
+
+//check if cart exist in localstorage
+
+
+if (localStorage.getItem("cart") === null) {
+    localStorage.setItem("cart", JSON.stringify([]));
+}
+
+function addtoCart(p) {
+
+    let products_cart = JSON.parse(localStorage.getItem("cart"));
+
+    products_cart.push(p);
+
+    localStorage.setItem("cart", JSON.stringify(products_cart));
+    console.log("products_cart:", products_cart);
+}
+</script>

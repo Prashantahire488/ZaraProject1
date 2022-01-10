@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ham{
+            width: 30px;
+            margin-left: 10px;
+       
+
+        }
+        #ham{
+  display: inline-block;
+  cursor: pointer;
+  
+}
+        
+        #header{
+            position: fixed;
+            display: grid;
+            /* border: solid; */
+            margin-top: 1%;
+            grid-template-columns: 40px 200px 200px 400px;
+            grid-template-rows: 100px;
+          
+        }
+
+        #zaraheader{
+            
+       position: fixed;
+            margin-left: 10%;
+            cursor: pointer;
+          /* border: solid; */
+          
+        }
+        /* #zaraheader>div:nth-child(2){
+            display: inline-block;
+           font-size: 110px;
+          
+           width: 40px;
+           color: rgb(14, 12, 12);
+           font-family:  "Didot";
+           
+          
+            
+        }
+        #zaraheader>div:nth-child(1){
+            display: inline-block;
+           font-size: 110px;
+           width: 27px;
+          
+           font-family:  "Didot";
+           color: rgb(14, 12, 12);
+          
+            
+        }
+        #zaraheader>div:nth-child(3){
+            display: inline-block;
+           font-size: 110px;
+           margin-left: 10px ;
+           font-family:  "Didot";
+           color: rgb(14, 12, 12);
+           
+        }
+        #zaraheader>div:nth-child(4){
+            display: inline-block;
+           font-size: 110px;
+           width: 34px;
+          
+           margin-left: -47px;
+         font-family:  "Didot";
+         color: rgb(14, 12, 12);
+          
+            
+        } */
+        #search{
+           
+            width: 100px;
+          /* border: solid; */
+            font-size: 14px;
+            margin-left: 1020px;
+          
+          
+        }
+        a{
+            text-decoration: none;
+            color: rgb(54, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #search>div{
+            width: 100%;
+            background-color:rgb(83, 81, 81);;
+            height: 2px;
+            margin-top: 3px;
+            /*border: solid;*/
+        }
+     #logbox{
+       
+         display: flex;
+         width: 260px;
+         margin-left: 920px;
+         /* border: solid; */
+        
+     }
+     #logbox>div{
+         width: 84px;
+         /* border: solid; */
+         font-size: 9px;
+         font-weight: 500;
+         text-align: end;
+         /* margin-top: 6%; */
+        
+     }
+     #picbox{
+         display: flex;
+         /* margin-top: 7%; */
+        /* border: solid; */
+     }
+     #mainimg{
+         width: 570px;
+         margin: auto;
+       
+     }
+     #mainimg>img{
+         width: 100%;
+         margin-top: 25%;
+        
+     }
+     #man{
+         
+        font-size: 10px;
+        height: 30px;
+         margin-top: 380px;
+      display: flex;
+        
+         
+         
+     }
+  
+     #kids{
+        
+         height: 30px;
+         font-size: 10px;
+         margin-top: 360px;
+     }
+ 
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+ #secondndpage{
+     width: 82%;
+     
+     margin: auto;
+     margin-top: 30%;
+
+ }
+ #email{
+     width: 300px;
+     height: 30px;
+     display: block;
+     
+ }
+ input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: white;
+}
+#email:focus {
+  outline: none;
+}
+.headerimg{
+         height: 90px;
+         width: 220px;
+        }
+        .d4{
+            margin-top: 160px;
+            font-size: 10px;
+        }
+        .d5{
+          
+           margin-top: 100px;
+           width: 700px;
+           border-top-style: groove;
+           font-size: 10px;
+          }
+          h5{
+              margin-bottom: -10px;
+          }
+          .mySlides {display:none;}
+          .rightbtn{
+              font-size: 25px;
+         
+             border: none;
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+              
+          }
+          .leftbtn{
+            
+              font-size: 25px;
+           
+              border: none;
+           
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+              
+          }
+          .leftbtn:hover{
+          font-size: 26px;
+          color: thistle;
+           /* background-color: darkgray; */
+           
+          }
+          .rightbtn:hover{
+            /* background-color: darkgray; */
+            font-size: 24px;
+            color: thistle;
+          }
+          /* sidebarstart */
+          .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #bbafaf;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: 46px;
+  
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+button{
+    border: none;
+    background-color: white;
+}
+.sidebar>button{
+display: block;
+margin-left: 10px;
+margin-top: 1%;
+}
+          /* sidebarend */
+          /* dropdownstart */
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: -22px;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+/* 2dropdown */
+.dropdown-content2 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  margin-top: -10px;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+ 
+}
+.dropdown-content2{
+    display: none;
+   margin-left: -22px;
+}
+
+/* 3rd dropdown */
+.dropdown-content3 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+.dropdown-content3{
+    display: none;
+    margin-left: -22px;
+}
+
+/* 4thdropdown */
+.dropdown-content4 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+  
+}
+.dropdown-content4{
+    display: none;
+    margin-left: -22px;
+}
+
+/* 5th dropdown */
+.dropdown-content5 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+.dropdown-content5{
+    display: none;
+   margin-left: -22px;
+}
+
+/* .dropdown a:hover {background-color: #ddd;} */
+
+.show {display: block;}
+          /* dropdownend */
+          #leftA{
+              margin-top: 14px;
+          }
+       /* woman page css */
+       #container_woman {
+            width: 90%;
+            margin: auto;
+        }
+
+        #header_Pavan {
+           
+            width: 90%;
+            height: 170px;
+            margin: 0 5%;
+        }
+        #dresses {
+            width: 90%;
+            margin: auto;
+            /* margin-left: 1500px; */
+        }
+
+    </style>
+</head>
+<body style="background-color: #ffffff;" id="body">
+    <div id="container">
+        <div id="header">
+            <!-- ham moving function myFunction(this) -->
+    <div id="ham" onclick=" openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="zaraheader" onclick="headclick()">
+        <!-- <div>Z</div>
+        <div>A</div>
+        <div>R</div>
+        <div>A</div> -->
+        <div><a href="zarahome.html"><img class="headerimg" src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE-720x303.png"></a></div>
+    </div>
+<div id="search">
+    <a href="SEARCh.html" >SEARCH</a>
+    <div></div>
+   
+</div>
+<div id="logbox">
+<div id="loggin"><a href="login.html">LOG IN</a></div>
+<div id="help"><a href="Help.html">HELP</a></div>
+<div id="cart"> <a href="zara_cart.html" id="checkcountcart">CART(0)</a></div>
+</div>
+
+    </div>
+    <div id="picbox">
+
+      <div id="container_woman">
+        <div id="header_Pavan"></div>
+
+        <div id="dresses"></div>
+
+
+    </div>
+        <!-- <div id="man"><button class="leftbtn" onclick="plusDivs()">&#10094;</button>
+            <a href="man.html" id="leftA"> MAN</a>
+        </div>
+      
+        <div id="mainimg" onclick="takeme()"><img id="changeimg" src="https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/750/0267420800_1_1_1.jpg?ts=1632730334059">
+            
+            <div style="font-size: 13px;">INTRODUCING THE FALL/WINTER 2021 COLLECTION</div>
+        </div>
+    
+        <div id="kids"><a href="kids.html" id="rightA">KIDS </a><button class="rightbtn" onclick="plusDivs()"><p>&#10095;</p></button></div>
+    </div> -->
+
+    <!-- continer end -->
+</div>
+<div id="secondndpage">
+    <label>JOIN OUR NEWSLETTER</label>
+    <input id="email" placeholder="ENTER YOUR EMAIL ADDRESS HERE" >
+    <div class="d4">
+        <a href="https://www.tiktok.com/@zara" class="hcolor acolor text_size">TIKTOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/zara/" class="hcolor acolor text_size">INSTAGRAM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/Zara" class="hcolor acolor text_size">FACEBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/ZARA" class="hcolor acolor text_size">TWITTER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://es.pinterest.com/zaraofficial" class="hcolor acolor text_size">PINTEREST</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.youtube.com/user/zara" class="hcolor acolor text_size">YOUTUBE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="d5">
+        <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+        <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+        <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+        </div>
+        </div>
+      
+       <!-- sidebarstart -->
+       <div id="mySidebar" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+        <button onclick="myFunction()"  id="sidezara" class="dropdown"  >ZARA ATHLETICZ
+            <!-- dropdownstart -->
+            <!-- <div class="dropdown"> -->
+                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">ABOUT</a>
+                  <a href="#about">COLLECTION</a>
+                  <a href="#contact">STORIES</a>
+                  <a href="#about">EXPERIENCE</a>
+                  <a href="#contact">STORES</a>
+                </div>
+              <!-- </div> -->
+              
+              <!-- dropdownend -->
+        </button>
+        <button id="sidewoman" class="dropdown2"  onclick="myFunction2()" >WOMAN
+            <div id="myDropdown2" class="dropdown-content2">
+                <a href="#home">COLLECTION</a>
+                <a href="login.html"> NIGHT POWER COLLECTION <b style="font-size: 8px;">NEW</b></a>
+                <a href="#contact">BLAZERS</a>
+                <a href="#about">DRESSES | JUMPSUITS</a>
+                <a href="#contact">TOPS|BODYSUITS</a>
+                <a href="#home">SHIRTS</a>
+                <a href="login.html">TROUSERS</a>
+                <a href="#contact">T-SHIRTS</a>
+                <a href="#about">JEANS</a>
+                <a href="#contact">SKIRTS&nbsp;| &nbsp;SHORTS</a>
+                <a href="#home">CO-ORD SETS</a>
+                
+                <a href="#contact">SUITS</a>
+                <a href="#about">KNITWEAR</a>
+                <a href="#contact">SWEATSHIRTS</a>
+              </div>
+        </button>
+        <button id="sideman"  class="dropdown3"  onclick="myFunction3()" >MAN
+            <div id="myDropdown3" class="dropdown-content3">
+                <a href="#home">NEW</a>
+                <a href="login.html"> ZARA ATHALETICZ <b style="font-size: 8px;">NEW</b></a>
+                <a href="#contact">COLLECTION</a>
+                <a href="#about">HERITAGE <b style="font-size: 8px;">NEW</b></a>
+                <a href="#contact">JACKETS</a>
+                <a href="#home">OVERSHIRTS</a>
+                <a href="login.html"> GILETS</a>
+                <a href="#contact">BLAZERS</a>
+                <a href="#about">SUITS</a>
+                <a href="#contact">T-SHIRTS</a>
+                <a href="#home">HOODIES | SWEATSHIRTS</a>
+                <a href="login.html">TRACKSUITS</a>
+                <a href="#about">KNITWEAR</a>
+                <a href="#about">POLO SHIRTS</a>
+                
+              </div>
+        </button>
+        <button id="sidekids" class="dropdown4"  onclick="myFunction4()">KIDS
+            <div id="myDropdown4" class="dropdown-content4">
+                <a href="#home">GIRL | 6 - 14 YEARS</a>
+                <a href="login.html"> BOY | 6 - 14 YEARS</a>
+                <a href="#contact"> BABY GIRL | 6 MONTHS - 5 YEARS</a>
+                <a href="#about">BABY BOY | 6 MONTHS  - 5 YEARS</a>
+                <a href="#contact">ACCESSORIES</a>
+                <a href="#contact">ZARASERIES</a>
+                <a href="#contact">BESTSELLERS <b style="font-size: 8px;">NEW</b></a>
+              </div>
+        </button>
+        <button id="sideshoes" class="dropdown5"  onclick="myFunction5()">SHOE&BAGS
+            <div id="myDropdown5" class="dropdown-content5">
+                <a href="#home">WOMAN</a>
+                <a href="login.html"> MAN</a>
+                <a href="#contact">KIDS</a>
+               
+              </div>
+        </button>
+        <button id="sidejoininfo" style="margin-top: 15px;">JOIN INFO</button>
+        <button id="sideinfo">COVID 19 INFO</button>
+        <button id="sideinfo" style="margin-top: 15px;">+INFO</button>
+      </div>
+      <!-- <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      </div> -->
+      
+       <!-- sidebarend -->
+<script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+function headclick(){
+   
+   
+    window.location.href="man.html"
+}
+var changeimg=document.getElementById("changeimg");
+var imgbox=document.getElementById("mainimg")
+var imgdata=["https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/750/0267420800_1_1_1.jpg?ts=1632730334059",
+"https://static.zara.net/photos///2021/I/T/2/p/0639/644/707/2/w/532/0639644707_15_1_1.jpg?ts=1632389495487",
+"https://static.zara.net/photos///2021/I/0/3/p/6357/494/801/202/w/448/6357494801_15_1_1.jpg?ts=1632394213709",
+"https://static.zara.net/photos///contents/mkt/spots/aw21-north-athleticz-newsletter/layout-figma-athleticz-newsletter//aw21-north-athleticz-newsletter.layout-figma-athleticz-newsletter.desktop-6f6583d207ff3a38f91a0a067fb9d2ce3278ae03-FILL-1.529_0.jpg?ts=1632756031442&imwidth=1440"]
+var i=1;
+var leftA=document.getElementById("leftA")
+var rightA=document.getElementById("rightA");
+var body=document.getElementById("container")
+
+function plusDivs(){
+    if(i==1){
+leftA.textContent="ZARA ATHALETICS";
+leftA.href="athelatics.html";
+rightA.href="woman.html";
+rightA.textContent="WOMAN";
+imgbox.style.width="650px";
+imgbox.onclick=function(){
+  window.location.href="man.html"
+}
+
+
+    }
+ else if(i===2){
+    leftA.textContent="MAN";
+    leftA.href="man.html";
+rightA.textContent="WOMAN";
+rightA.href="woman.html";
+imgbox.style.width="600px";
+imgbox.onclick=function(){
+  window.location.href="kids.html"
+}
+
+ }
+ else if(i==3){
+  
+    leftA.textContent="WOMAN";
+rightA.textContent="KIDS";
+leftA.href="woman.html";
+rightA.href="kids.html";
+imgbox.style.width="100%";
+imgbox.style.textOverflow="cover"
+body.style.backgroundColor="black";
+body.style.color="white"
+changeimg.style.marginTop="10px"
+
+changeimg.style.height=""
+imgbox.onclick=function(){
+  window.location.href="Athelatics.html"
+}
+ }
+    else{
+        leftA.textContent="MAN";
+rightA.textContent="KIDS";
+leftA.href="man.html";
+rightA.href="kids.html";
+imgbox.style.width="570px";
+body.style.backgroundColor="white";
+body.style.color="black"
+changeimg.style.marginTop="20%";
+imgbox.onclick=function(){
+  window.location.href="woman.html"
+}
+
+ }
+if(i>3){
+    i=0;
+}
+    if(i>=0){
+       
+changeimg.src=imgdata[i];
+console.log(i)
+i++;  
+    }
+   
+  
+}
+function takeme(){
+    window.location.href="woman.html";
+}
+//sidebarstart
+function openNav() {
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("body").style.marginLeft = "30px";
+  document.getElementById("container").style.opacity="1"
+
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("body").style.marginLeft= "4px";
+document.getElementById("container").style.opacity="1"
+}
+// sidebarend
+// dropdownstart
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#sidezara')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidewoman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidekids')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideshoes')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content5");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+// dropdown end
+
+// checkcountcart
+var formdata= JSON.parse(localStorage.getItem('Zara_cart_dresses'))
+var checkcountcart= document.getElementById("checkcountcart")
+
+checkcountcart.textContent="CART("+formdata.length+")"
+
+
+
+
+
+
+// woman page 
+
+
+
+let dress1 = [
+            {
+                img : "https://static.zara.net/photos///2021/I/T/3/p/8345/830/001/2/w/866/8345830001_15_1_1.jpg?ts=1632759973563"
+                // img : "https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/613/0267420800_1_1_1.jpg?ts=1632730334059"
+            }
+        ];
+
+        let dress2 = [
+            {
+                img : "https://static.zara.net/photos///2021/I/T/3/p/6325/830/102/2/w/866/6325830102_15_1_1.jpg?ts=1632760003658"
+                 
+            }
+        ];
+        let dress3 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/T/3/p/2312/830/040/2/w/348/2312830040_1_1_1.jpg?ts=1632759628206"
+               
+            }
+        ];
+        let dress4 = [
+            {                
+              img : "https://static.zara.net/photos///2021/I/T/3/p/2312/830/102/2/w/348/2312830102_15_1_1.jpg?ts=1632756370959",
+                name : "MONOCHROME MULTI-PIECE SNEAKERS" ,
+                price : "2890",
+                colour : " Beige ",
+                size : "M"
+            }
+        ];
+        let dress5 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/4331/830/009/2/w/312/4331830009_6_1_1.jpg?ts=1632473213368",
+                name : "TEXTURED DRESS - LIMITED EDITION" ,
+                price : "7990",
+                colour : "Black",
+                size : "L"
+            }                 
+        ];
+        let dress6 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2316/830/040/2/w/312/2316830040_6_1_1.jpg?ts=1630910322311",
+                name : "RUFFLED DRESS LIMITED EDITION" ,
+                price : "7990",
+                colour : "Beige-pink",
+                size : "S"
+            }   
+        ];
+        let dress7 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/8337/830/009/2/w/563/8337830009_6_1_1.jpg?ts=1631636175689",
+                name : "TEXTURED DRESS - LIMITED EDITION" ,
+                price : "7990",
+                colour : "Black",
+                size : "M"
+            }
+        ];
+        let dress8= [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/4331/830/100/2/w/563/4331830100_6_1_1.jpg?ts=1632237577111",
+                name : "SHINY LONG DRESS LIMITED EDITION" ,
+                price : "7990",
+                colour : "Black",
+                size : "XS"
+            }                 
+        ];
+        let dress9 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2317/830/102/2/w/563/2317830102_6_1_1.jpg?ts=1630910436762",
+                name : "TEXTURED DRESS - LIMITED EDITION" ,
+                price : "7990",
+                colour : "Black",
+                size : "M"
+            }   
+        ];
+        let dress10 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/8331/830/100/2/w/563/8331830100_6_1_1.jpg?ts=1631629816720",
+                name : "RUFFLED DRESS LIMITED EDITION" ,
+                price : "7990",
+                colour : "Beige-pink",
+                size : "L"
+            }
+        ];
+        let dress11 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/8331/830/100/2/w/563/8331830100_6_1_1.jpg?ts=1631629816720",
+                name : "MINI DRESS WITH DRAPED DETAIL" ,
+                price : "2990",
+                colour : "Black",
+                size : "M"
+            }
+        ];
+        let dress12 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/4323/830/001/2/w/257/4323830001_6_1_1.jpg?ts=1630526410669",
+                name : "MINI DRESS WITH BELT" ,
+                price : "2990",
+                colour : "Fuchsia",
+                size : "S"
+            }
+        ];
+        let dress13 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2138/830/030/2/w/312/2138830030_6_1_1.jpg?ts=1631895735447",
+                name : "SHIRT DRESS WITH PANELS" ,
+                price : "2990",
+                colour : "Khaki",
+                size : "L"
+            }
+        ];
+        let dress14 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2122/830/102/2/w/563/2122830102_6_1_1.jpg?ts=1631819279605",
+                name : "SATIN DRESS WITH RHINESTONE CHAIN" ,
+                price : "2990",
+                colour : "Bluish",
+                size : "M"
+            }
+        ];
+        let dress15 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2120/830/040/2/w/563/2120830040_6_1_1.jpg?ts=1631817691477",
+                name : "TEXTURED RUFFLED PINAFORE DRESS" ,
+                price : "2990",
+                colour : "Blue/White",
+                size : "S"
+            }
+        ];
+        let dress16 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2123/830/050/3/w/423/2123830050_1_1_1.jpg?ts=1631630202715",
+                name : "STRAPPY DRESS WITH RHINESTONE DETAIL" ,
+                price : "2990",
+                colour : "Blue/White",
+                size : "L"
+            }
+        ];
+        let dress17 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/T/3/p/6325/830/040/2/w/368/6325830040_1_1_1.jpg?ts=1632759572449",
+                name : "MINI DRESS WITH DRAPED DETAIL" ,
+                price : "2990",
+                colour : "Cobalt",
+                size : "S"
+            }
+        ];
+        let dress18 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/T/3/p/8331/830/009/2/w/368/8331830009_1_1_1.jpg?ts=1632759394375",
+                name : "SATIN CAMISOLE DRESS" ,
+                price : "2990",
+                colour : "Cobalt",
+                size : "L"
+            }
+        ];
+        let dress19 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2007/830/030/2/w/563/2007830030_6_1_1.jpg?ts=1628670221343",
+                name : "CUT-OUT PUFF DRESS" ,
+                price : "2799",
+                colour : "Black",
+                size : "M"
+            }
+        ];
+        let dress20 = [
+            {
+              img : "https://static.zara.net/photos///2021/I/1/3/p/2007/830/030/5/w/423/2007830030_1_1_1.jpg?ts=1631630282145",
+                name : "LONG CHECKED KNIT DRESS" ,
+                price : "2990",
+                colour : "Cobalt",
+                size : "L"
+            }
+        ];
+
+
+        if(localStorage.getItem("Zara_cart_dresses") === null) {
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify([]));
+        }    
+
+        let dress = JSON.parse(localStorage.getItem("Zara_cart_dresses"));
+
+
+
+        let parent = document.getElementById("dresses");
+
+        // 1st image
+
+        let div1 = document.createElement("div");
+
+        let img1 = document.createElement("img");
+
+        img1.src = dress1[0].img;
+        div1.style.width = "90%";
+        div1.style.margin = "200px";
+        console.log(img1);
+        div1.append(img1);   
+       
+        // parent.append(div1);
+
+        //2nd image 
+
+        let div2 = document.createElement("div");
+
+        let img2 = document.createElement("img");
+
+        img2.src = dress2[0].img;
+        div2.style.width = "90%";
+        div2.style.margin = "200px";
+        
+        div2.append(img2);   
+        // parent.append(div1,div2); 
+
+        //content
+        
+        let divc = document.createElement("div");
+        let divc1 = document.createElement("div");
+        let divc2 = document.createElement("div");
+        divc1.textContent = "DRESSES FOR WOMEN";
+        divc1.style.width = "90%";
+        divc1.style.margin = " 0px 0px 0px 200px"; 
+        style(divc1); 
+        console.log(divc1);   
+        divc2.textContent = "FROM EASY WRAP DRESS STYLES TO BODYCON SLIPS, WOMEN’S DRESSES COME IN ALL NEW SILHOUETTES, PRINTS AND COLOURS THIS SEASON. DISCOVER SOMETHING FOR EVERY OCCASION IN OUR ONLINE COLLECTION; WHETHER YOU’RE AFTER A BASIC SHIRT DRESS FOR WORK, OR A COSY KNITTED DRESS FOR THE WEEKEND. LOOKING FOR A PARTY CLASSIC? TAKE YOUR PICK FROM OUR EDIT OF CHIC LITTLE BLACK DRESSES AND GLAMOROUS MAXI LENGTH GOWNS.";    
+        divc2.style.width = "70%";
+        divc2.style.margin = " 0px 200px 200px 200px"; 
+        style(divc2); 
+        console.log(divc2);    
+        divc.append(divc1,divc2);
+        console.log(divc);
+        
+        // 3rd image
+        let div3 = document.createElement("div");
+
+        let img3 = document.createElement("img");
+
+        img3.src = dress3[0].img;
+        div3.style.width = "90%";
+        div3.style.margin = "200px";
+        
+        div3.append(img3);   
+        // parent.append(div1,divc,div2,div3); 
+
+        // 4th image
+        let div4 = document.createElement("div");
+
+        let img4 = document.createElement("img");
+        
+
+        img4.src = dress4[0].img;
+        // function click(e) {
+        //     // e.preventDefault();
+        //     dress.push(dress4[0]);
+        // } 
+        // img4.addEventListener("click",click());
+      
+
+
+
+        div4.style.width = "90%";
+        div4.style.margin = "50px 50px 0px 50px";
+
+        div4.append(img4);   
+        div4.onclick = function() {
+            dress.push(dress4[0]);
+            // var cart= JSON.parse( localStorage.getItem("cart"));
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+          window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress4[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+        }
+       
+        // parent.append(div1,divc,div2,div3,div4);
+
+        // content2
+        let divc3 = document.createElement("div");
+        let divc4 = document.createElement("div");
+        let divc5 = document.createElement("div");
+        let divc6 = document.createElement("div");
+        divc4.textContent = "NEW / SPECIAL EDITION";
+        divc4.style.width = "90%";
+        divc4.style.margin = " 0px 0px 0px 50px"; 
+        style(divc4); 
+        console.log(divc4);   
+        divc5.textContent = dress4[0].name;    
+        divc5.style.width = "70%";
+        divc5.style.margin = "0px 0px 0px 50px";  
+        style(divc5); 
+        console.log(divc5); 
+        divc6.textContent = dress4[0].price;     
+        divc6.style.width = "70%";
+        divc6.style.margin = " 0px 200px 200px 50px"; 
+        style(divc6); 
+        console.log(divc6);   
+        divc3.margin = "0px 0px 0px 900px";
+        divc3.append(divc4,divc5,divc6);
+        console.log(divc3);
+        parent.append(div1,divc,div2,div3,div4,divc3);
+
+// ============================================================================================================
+        // 5th image and content
+        let div7 = document.createElement("div");
+
+            // first part
+        let div80 = document.createElement("div"); 
+        let div8 = document.createElement("div");       
+        let div81 = document.createElement("div");
+
+        // first image 
+        let img82 = document.createElement("img");
+
+        img82.src = dress5[0].img;
+        img82.style.width = "90%";
+        // img82.style.marginLeft = "40%";
+        // div80.style.width = "90%";
+        div80.style.margin = "0px 0px 0px 0px";
+
+        // div80.append(img82);  
+        // console.log(div80);
+
+        // content============================================================================
+
+        let divc83 = document.createElement("div");
+        let divc84 = document.createElement("div");
+        let divc85 = document.createElement("div");
+        let divc86 = document.createElement("div");
+        divc84.textContent = "NEW / SPECIAL EDITION";
+        divc84.style.width = "90%";
+        divc84.style.margin = " 0px 0px 0px 0px"; 
+        style(divc84); 
+       
+        console.log(divc84);   
+        divc85.textContent =  dress5[0].name;    
+        divc85.style.width = "70%";
+        divc85.style.margin = "0px 0px 0px 0px";  
+        style(divc85); 
+      
+        console.log(divc85); 
+        divc86.textContent =  dress5[0].price;    
+        divc86.style.width = "70%";
+        divc86.style.margin = " 0px 0px 0px 0px"; 
+        style(divc86); 
+       
+        console.log(divc86);   
+        divc83.margin = "0px 0px 0px 0px";
+        divc83.append(divc84,divc85,divc86);
+        console.log(divc83);
+
+
+        div80.append(img82,divc83); 
+        console.log(div80);
+        div80.onclick = function() {
+            dress.push(dress5[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            //for indivisual cart
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress5[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+        }
+
+
+
+        // =====================================================================================
+
+            // second part
+        let div90 = document.createElement("div"); 
+        let div9 = document.createElement("div");      
+        let div91 = document.createElement("div");
+        
+        // second image 
+        let img92 = document.createElement("img");
+
+        img92.src = dress6[0].img;
+        img92.style.width = "90%";
+        // div90.style.width = "90%";
+        // div90.style.margin = "0px 0px 0px 0px";
+
+        // div90.append(img92); 
+            
+        // content============================================================================
+
+        let divc93 = document.createElement("div");
+        let divc94 = document.createElement("div");
+        let divc95 = document.createElement("div");
+        let divc96 = document.createElement("div");
+        divc94.textContent = "NEW / SPECIAL EDITION";
+        divc94.style.width = "90%";
+        divc94.style.margin = " 0px 0px 0px 0px";
+        style(divc94);  
+      
+        console.log(divc94);   
+        divc95.textContent =  dress6[0].name;    
+        divc95.style.width = "70%";
+        divc95.style.margin = "0px 0px 0px 0px";  
+        style(divc95); 
+       
+        console.log(divc95); 
+        divc96.textContent = dress6[0].price;     
+        divc96.style.width = "70%";
+        divc96.style.margin = " 0px 0px 200px 0px"; 
+        style(divc96); 
+       
+        console.log(divc96);   
+        divc93.margin = "0px 0px 0px 0px";
+        divc93.append(divc94,divc95,divc96);
+        console.log(divc93);
+
+        div90.style.margin = "0px 0px 0px 0px";
+        div90.append(img92,divc93); 
+        console.log(div90);
+        div90.onclick = function() {
+            dress.push(dress6[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress6[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+        }
+
+
+        // =====================================================================================
+
+            // third part
+        let div100 = document.createElement("div"); 
+        let div10 = document.createElement("div");
+        let div101 = document.createElement("div");
+
+          // third image 
+        let img102 = document.createElement("img");
+
+        img102.src = dress7[0].img;
+        img102.style.width = "90%";
+        // img102.style.marginLeft = "-40%";
+        // div100.style.width = "90%";
+        //  img102.style.margin = "50px 50px 0px 50px";
+
+        // div100.append(img102); 
+        //  div7.style.display = "flex";    
+        //  div7.append(div80,div90,div100);
+
+          // content============================================================================
+
+        let divc103 = document.createElement("div");
+        let divc104 = document.createElement("div");
+        let divc105 = document.createElement("div");
+        let divc106 = document.createElement("div");
+        divc104.textContent = "NEW / SPECIAL EDITION";
+        divc104.style.width = "70%";
+        divc104.style.margin = " 0px 0px 0px 0px"; 
+        style(divc104); 
+       
+        console.log(divc104);   
+        divc105.textContent = dress7[0].name;       
+        divc105.style.width = "70%";
+        divc105.style.margin = "0px 0px 0px 0px"; 
+        style(divc105);  
+      
+        console.log(divc105); 
+        divc106.textContent = dress7[0].price;   
+        divc106.style.width = "70%";
+        divc106.style.margin = " 0px 0px 200px 0px"; 
+        style(divc106);    
+      
+        console.log(divc106);   
+        divc103.margin = "0px 0px 0px 0px";
+        divc103.append(divc104,divc105,divc106);
+        console.log(divc103);
+
+
+        div100.append(img102,divc103); 
+        div100.onclick = function() {
+            dress.push(dress7[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress7[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+        }
+
+        // console.log(div100);
+
+        // div7.style.display = "flex";    
+        div7.style.display = "grid"; 
+        div7.style.gridTemplateColumns = "30% 30% 30%";
+        div7.style.gridTemplateRows = "45%";
+        div7.style.gridGap = "2%";  
+        div7.style.marginLeft = "16%";  
+        div7.style.marginTop = "16%";  
+        div7.append(div80,div90,div100);
+
+        // =====================================================================================
+
+        //  parent.append(div1,divc,div2,div3,div4,divc3,div80,div90,div100); 
+        // parent.append(div1,divc,div2,div3,div4,divc3,div7);    
+        
+        function style(key)  {
+            var a = key;
+            a.style.fontFamily = "Neue-Helvetica, Helvetica, Arial, sans-serif";
+            a.style.fontSize = "9px";
+            a.style.color = "black";
+            a.style.lineHeight = "12px";
+            a.style.fontWeight = "500"; 
+        }
+
+ // ============================================================================================================
+        // 6th image and content     
+// ============================================================================================================
+
+let divm7 = document.createElement("div");
+
+// first part
+let divm80 = document.createElement("div"); 
+let divm8 = document.createElement("div");       
+let divm81 = document.createElement("div");
+
+// first image 
+let imgm82 = document.createElement("img");
+
+imgm82.src = dress8[0].img;
+imgm82.style.width = "90%";
+// imgm82.style.marginLeft = "40%";
+// divm80.style.width = "90%";
+divm80.style.margin = "0px 0px 0px 0px";
+
+// divm80.append(img82);  
+// console.log(divm80);
+
+// content============================================================================
+
+let divmc83 = document.createElement("div");
+let divmc84 = document.createElement("div");
+let divmc85 = document.createElement("div");
+let divmc86 = document.createElement("div");
+divmc84.textContent = "NEW";
+divmc84.style.width = "90%";
+divmc84.style.margin = " 0px 0px 0px 0px"; 
+style(divmc84); 
+
+console.log(divmc84);   
+divmc85.textContent =  dress8[0].name;    
+divmc85.style.width = "70%";
+divmc85.style.margin = "0px 0px 0px 0px";  
+style(divmc85); 
+
+console.log(divmc85); 
+divmc86.textContent =  dress8[0].price;    
+divmc86.style.width = "70%";
+divmc86.style.margin = " 0px 0px 0px 0px"; 
+style(divmc86); 
+
+console.log(divmc86);   
+divmc83.margin = "0px 0px 0px 0px";
+divmc83.append(divmc84,divmc85,divmc86);
+console.log(divmc83);
+
+
+divm80.append(imgm82,divmc83); 
+divm80.onclick=function(){
+    dress.push(dress8[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress8[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+
+}
+console.log(divm80);
+
+
+
+
+// // =====================================================================================
+
+// second part
+let divm90 = document.createElement("div"); 
+let divm9 = document.createElement("div");      
+let divm91 = document.createElement("div");
+
+// second image 
+let imgm92 = document.createElement("img");
+
+imgm92.src = dress9[0].img;
+imgm92.style.width = "90%";
+// divm90.style.width = "90%";
+// divm90.style.margin = "0px 0px 0px 0px";
+
+// divm90.append(img92); 
+
+// content============================================================================
+
+let divmc93 = document.createElement("div");
+let divmc94 = document.createElement("div");
+let divmc95 = document.createElement("div");
+let divmc96 = document.createElement("div");
+divmc94.textContent = "NEW";
+divmc94.style.width = "90%";
+divmc94.style.margin = " 0px 0px 0px 0px";
+style(divmc94);  
+
+console.log(divmc94);   
+divmc95.textContent =  dress9[0].name;    
+divmc95.style.width = "70%";
+divmc95.style.margin = "0px 0px 0px 0px";  
+style(divmc95); 
+
+console.log(divmc95); 
+divmc96.textContent = dress9[0].price;     
+divmc96.style.width = "70%";
+divmc96.style.margin = " 0px 0px 200px 0px"; 
+style(divmc96); 
+
+console.log(divmc96);   
+divmc93.margin = "0px 0px 0px 0px";
+divmc93.append(divmc94,divmc95,divmc96);
+console.log(divmc93);
+
+divm90.style.margin = "0px 0px 0px 0px";
+divm90.append(imgm92,divmc93); 
+divm90.onclick=function(){
+    dress.push(dress9[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress9[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+// console.log(divm90);
+
+
+
+// =====================================================================================
+
+// third part
+let divm100 = document.createElement("div"); 
+let divm10 = document.createElement("div");
+let divm101 = document.createElement("div");
+
+// third image 
+let imgm102 = document.createElement("img");
+
+imgm102.src = dress10[0].img;
+imgm102.style.width = "90%";
+// img102.style.marginLeft = "-40%";
+// divm100.style.width = "90%";
+//  img102.style.margin = "50px 50px 0px 50px";
+
+// divm100.append(img102); 
+//  divm7.style.display = "flex";    
+//  divm7.append(divm80,divm90,divm100);
+
+// content============================================================================
+
+let divmc103 = document.createElement("div");
+let divmc104 = document.createElement("div");
+let divmc105 = document.createElement("div");
+let divmc106 = document.createElement("div");
+divmc104.textContent = "NEW";
+divmc104.style.width = "70%";
+divmc104.style.margin = " 0px 0px 0px 0px"; 
+style(divmc104); 
+
+console.log(divmc104);   
+divmc105.textContent = dress10[0].name;       
+divmc105.style.width = "70%";
+divmc105.style.margin = "0px 0px 0px 0px"; 
+style(divmc105);  
+
+console.log(divmc105); 
+divmc106.textContent = dress10[0].price;   
+divmc106.style.width = "70%";
+divmc106.style.margin = " 0px 0px 200px 0px"; 
+style(divmc106);    
+
+console.log(divmc106);   
+divmc103.margin = "0px 0px 0px 0px";
+divmc103.append(divmc104,divmc105,divmc106);
+console.log(divmc103);
+
+
+divm100.append(imgm102,divmc103); 
+divm100.onclick=function(){
+    dress.push(dress10[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress10[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+// console.log(divm100);
+
+// divm7.style.display = "flex";    
+divm7.style.display = "grid"; 
+divm7.style.gridTemplateColumns = "30% 30% 30%";
+divm7.style.gridTemplateRows = "45%";
+divm7.style.gridGap = "2%";  
+divm7.style.marginLeft = "16%";  
+divm7.append(divm80,divm90,divm100);
+
+
+// parent.append(div1,divc,div2,div3,div4,divc3,div7,divm80); 
+            // parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7);  
+// ============================================================================================================ 
+
+
+ // ============================================================================================================
+        // 7th image and content     
+// ============================================================================================================
+
+let divn7 = document.createElement("div");
+
+// first part
+let divn80 = document.createElement("div"); 
+let divn8 = document.createElement("div");       
+let divn81 = document.createElement("div");
+
+// first image 
+let imgn82 = document.createElement("img");
+
+imgn82.src = dress11[0].img;
+imgn82.style.width = "90%";
+// imgn82.style.marginLeft = "40%";
+// divn80.style.width = "90%";
+divn80.style.margin = "0px 0px 0px 0px";
+
+// divn80.append(img82);  
+// console.log(divn80);
+
+// content============================================================================
+
+let divnc83 = document.createElement("div");
+let divnc84 = document.createElement("div");
+let divnc85 = document.createElement("div");
+let divnc86 = document.createElement("div");
+divnc84.textContent = "NEW";
+divnc84.style.width = "90%";
+divnc84.style.margin = " 0px 0px 0px 0px"; 
+style(divnc84); 
+
+console.log(divnc84);   
+divnc85.textContent =  dress11[0].name;    
+divnc85.style.width = "70%";
+divnc85.style.margin = "0px 0px 0px 0px";  
+style(divnc85); 
+
+console.log(divnc85); 
+divnc86.textContent =  dress11[0].price;    
+divnc86.style.width = "70%";
+divnc86.style.margin = " 0px 0px 0px 0px"; 
+style(divnc86); 
+
+console.log(divnc86);   
+divnc83.margin = "0px 0px 0px 0px";
+divnc83.append(divnc84,divnc85,divnc86);
+console.log(divnc83);
+
+
+divn80.append(imgn82,divnc83); 
+divn80.onclick=function(){
+    dress.push(dress11[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress11[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+
+}
+// console.log(divn80);
+
+
+
+
+// // =====================================================================================
+
+// second part
+let divn90 = document.createElement("div"); 
+let divn9 = document.createElement("div");      
+let divn91 = document.createElement("div");
+
+// second image 
+let imgn92 = document.createElement("img");
+
+imgn92.src = dress12[0].img;
+imgn92.style.width = "90%";
+// divn90.style.width = "90%";
+// divn90.style.margin = "0px 0px 0px 0px";
+
+// divn90.append(img92); 
+
+// content============================================================================
+
+let divnc93 = document.createElement("div");
+let divnc94 = document.createElement("div");
+let divnc95 = document.createElement("div");
+let divnc96 = document.createElement("div");
+divnc94.textContent = "NEW";
+divnc94.style.width = "90%";
+divnc94.style.margin = " 0px 0px 0px 0px";
+style(divnc94);  
+
+console.log(divnc94);   
+divnc95.textContent =  dress12[0].name;    
+divnc95.style.width = "70%";
+divnc95.style.margin = "0px 0px 0px 0px";  
+style(divnc95); 
+
+console.log(divnc95); 
+divnc96.textContent = dress12[0].price;     
+divnc96.style.width = "70%";
+divnc96.style.margin = " 0px 0px 200px 0px"; 
+style(divnc96); 
+
+console.log(divnc96);   
+divnc93.margin = "0px 0px 0px 0px";
+divnc93.append(divnc94,divnc95,divnc96);
+console.log(divnc93);
+
+divn90.style.margin = "0px 0px 0px 0px";
+divn90.append(imgn92,divnc93); 
+// console.log(divn90);
+
+divn90.onclick=function(){
+    dress.push(dress12[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress12[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+
+// =====================================================================================
+
+
+// divn7.style.display = "flex";    
+divn7.style.display = "grid"; 
+divn7.style.gridTemplateColumns = "30% 30% 30%";
+divn7.style.gridTemplateRows = "45%";
+divn7.style.gridGap = "2%";  
+divn7.style.marginLeft = "-9%";  
+divn7.append(divn80,divn90);
+
+
+// parent.append(div1,divc,div2,div3,div4,divc3,div7,divn80); 
+            // parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7);  
+// ============================================================================================================ 
+
+
+ // ============================================================================================================
+        // 8th image and content     
+// ============================================================================================================
+
+let divo7 = document.createElement("div");
+
+// first part
+let divo80 = document.createElement("div"); 
+let divo8 = document.createElement("div");       
+let divo81 = document.createElement("div");
+
+// first image 
+let imgo82 = document.createElement("img");
+
+imgo82.src = dress13[0].img;
+imgo82.style.width = "90%";
+// imgo82.style.marginLeft = "40%";
+// divo80.style.width = "90%";
+divo80.style.margin = "0px 0px 0px 0px";
+
+// divo80.append(img82);  
+// console.log(divo80);
+
+// content============================================================================
+
+let divoc83 = document.createElement("div");
+let divoc84 = document.createElement("div");
+let divoc85 = document.createElement("div");
+let divoc86 = document.createElement("div");
+divoc84.textContent = "NEW / +1 COLOUR";
+divoc84.style.width = "90%";
+divoc84.style.margin = " 0px 0px 0px 0px"; 
+style(divoc84); 
+
+console.log(divoc84);   
+divoc85.textContent =  dress13[0].name;    
+divoc85.style.width = "70%";
+divoc85.style.margin = "0px 0px 0px 0px";  
+style(divoc85); 
+
+console.log(divoc85); 
+divoc86.textContent =  dress13[0].price;    
+divoc86.style.width = "70%";
+divoc86.style.margin = " 0px 0px 0px 0px"; 
+style(divoc86); 
+
+console.log(divoc86);   
+divoc83.margin = "0px 0px 0px 0px";
+divoc83.append(divoc84,divoc85,divoc86);
+console.log(divoc83);
+
+
+divo80.append(imgo82,divoc83); 
+// console.log(divo80);
+divo80.onclick=function(){
+    dress.push(dress13[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress13[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+
+
+
+
+// // =====================================================================================
+
+// second part
+let divo90 = document.createElement("div"); 
+let divo9 = document.createElement("div");      
+let divo91 = document.createElement("div");
+
+// second image 
+let imgo92 = document.createElement("img");
+
+imgo92.src = dress14[0].img;
+imgo92.style.width = "90%";
+// divo90.style.width = "90%";
+// divo90.style.margin = "0px 0px 0px 0px";
+
+// divo90.append(img92); 
+
+// content============================================================================
+
+let divoc93 = document.createElement("div");
+let divoc94 = document.createElement("div");
+let divoc95 = document.createElement("div");
+let divoc96 = document.createElement("div");
+divoc94.textContent = "NEW";
+divoc94.style.width = "90%";
+divoc94.style.margin = " 0px 0px 0px 0px";
+style(divoc94);  
+
+console.log(divoc94);   
+divoc95.textContent =  dress14[0].name;    
+divoc95.style.width = "70%";
+divoc95.style.margin = "0px 0px 0px 0px";  
+style(divoc95); 
+
+console.log(divoc95); 
+divoc96.textContent = dress14[0].price;     
+divoc96.style.width = "70%";
+divoc96.style.margin = " 0px 0px 200px 0px"; 
+style(divoc96); 
+
+console.log(divoc96);   
+divoc93.margin = "0px 0px 0px 0px";
+divoc93.append(divoc94,divoc95,divoc96);
+console.log(divoc93);
+
+divo90.style.margin = "0px 0px 0px 0px";
+divo90.append(imgo92,divoc93); 
+// console.log(divo90);
+divo90.onclick=function(){
+    dress.push(dress14[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress14[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+
+
+
+// =====================================================================================
+
+// third part
+let divo100 = document.createElement("div"); 
+let divo10 = document.createElement("div");
+let divo101 = document.createElement("div");
+
+// third image 
+let imgo102 = document.createElement("img");
+
+imgo102.src = dress15[0].img;
+imgo102.style.width = "90%";
+// img102.style.marginLeft = "-40%";
+// divo100.style.width = "90%";
+//  img102.style.margin = "50px 50px 0px 50px";
+
+// divo100.append(img102); 
+//  divo7.style.display = "flex";    
+//  divo7.append(divo80,divo90,divo100);
+
+// content============================================================================
+
+let divoc103 = document.createElement("div");
+let divoc104 = document.createElement("div");
+let divoc105 = document.createElement("div");
+let divoc106 = document.createElement("div");
+divoc104.textContent = "NEW";
+divoc104.style.width = "70%";
+divoc104.style.margin = " 0px 0px 0px 0px"; 
+style(divoc104); 
+
+console.log(divoc104);   
+divoc105.textContent = dress15[0].name;       
+divoc105.style.width = "70%";
+divoc105.style.margin = "0px 0px 0px 0px"; 
+style(divoc105);  
+
+console.log(divoc105); 
+divoc106.textContent = dress15[0].price;   
+divoc106.style.width = "70%";
+divoc106.style.margin = " 0px 0px 200px 0px"; 
+style(divoc106);    
+
+console.log(divoc106);   
+divoc103.margin = "0px 0px 0px 0px";
+divoc103.append(divoc104,divoc105,divoc106);
+console.log(divoc103);
+
+
+divo100.append(imgo102,divoc103); 
+divo100.onclick=function(){
+    dress.push(dress15[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress15[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+// console.log(divo100);
+
+// divo7.style.display = "flex";    
+divo7.style.display = "grid"; 
+divo7.style.gridTemplateColumns = "30% 30% 30%";
+divo7.style.gridTemplateRows = "45%";
+divo7.style.gridGap = "2%";  
+divo7.style.marginLeft = "16%";  
+divo7.append(divo80,divo90,divo100);
+
+// parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7);  
+
+//==================================================================================
+//==================================================================================
+        // 11th image
+//==================================================================================
+let divp7 = document.createElement("div");
+let divp100 = document.createElement("div"); 
+// let divp10 = document.createElement("div");
+// let divp101 = document.createElement("div");
+
+// third image 
+let imgp102 = document.createElement("img");
+
+imgp102.src = dress16[0].img;
+imgp102.style.width = "45%";
+// img102.style.marginLeft = "-40%";
+// divp100.style.width = "90%"; 
+//  img102.style.margin = "50px 50px 0px 50px";
+
+// divp100.append(img102); 
+//  divp7.style.display = "flex";    
+//  divp7.append(divp80,divp90,divp100);
+
+// content============================================================================
+
+let divpc103 = document.createElement("div");
+let divpc104 = document.createElement("div");
+let divpc105 = document.createElement("div");
+let divpc106 = document.createElement("div");
+divpc104.textContent = dress16[0].name;
+divpc104.style.width = "70%";
+divpc104.style.margin = " 0px 0px 0px 0px"; 
+// style(divpc104); 
+divpc104.style.fontFamily = "Neue-Helvetica, Helvetica, Arial, sans-serif";
+divpc104.style.fontSize = "18px";
+divpc104.style.color = "black";
+divpc104.style.lineHeight = "24px";
+divpc104.style.fontWeight = "500"; 
+
+console.log(divpc104);   
+divpc105.textContent = dress16[0].price;      
+divpc105.style.width = "70%";
+divpc105.style.margin = "0px 0px 0px 0px"; 
+style(divpc105);  
+
+console.log(divpc105); 
+divpc106.textContent =  "SATIN DRESS WITH A STRAIGHT NECKLINE. THIN STRAPS WITH RHINESTONE APPLIQUÉS. DRAPED FABRIC DETAIL ON THE SIDE. INVISIBLE BACK ZIP FASTENING." ; 
+divpc106.style.width = "90%";
+divpc106.style.margin = " 0px 0px 200px 0px"; 
+style(divpc106);    
+
+console.log(divpc106);   
+divpc103.margin = "0px 0px 0px 0px";
+divpc103.append(divpc104,divpc105,divpc106);
+console.log(divpc103);
+
+
+divp100.append(imgp102,divpc103); 
+divp100.style.marginLeft = "200px";
+
+console.log(divp100);
+divp100.onclick=function(){
+    dress.push(dress16[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress16[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+
+
+
+
+// parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7,divp100);  
+//==================================================================================
+
+
+//==================================================================================
+        // 9th image
+//==================================================================================
+let divy7 = document.createElement("div");
+let divy100 = document.createElement("div"); 
+// let divy10 = document.createElement("div");
+// let divy101 = document.createElement("div");
+
+// third image 
+let imgy102 = document.createElement("img");
+
+imgy102.src = dress19[0].img;
+imgy102.style.width = "45%";
+// img102.style.marginLeft = "-40%";
+// divy100.style.width = "90%"; 
+//  img102.style.margin = "50px 50px 0px 50px";
+
+// divy100.append(img102); 
+//  divy7.style.display = "flex";    
+//  divy7.append(divy80,divy90,divy100);
+
+// content============================================================================
+
+let divyc103 = document.createElement("div");
+let divyc104 = document.createElement("div");
+let divyc105 = document.createElement("div");
+let divyc106 = document.createElement("div");
+divyc104.textContent =  "NEW";
+divyc104.style.width = "70%";
+divyc104.style.margin = " 0px 0px 0px 0px"; 
+// style(divyc104); 
+divyc104.style.fontFamily = "Neue-Helvetica, Helvetica, Arial, sans-serif";
+divyc104.style.fontSize = "18px";
+divyc104.style.color = "black";
+divyc104.style.lineHeight = "24px";
+divyc104.style.fontWeight = "500"; 
+
+console.log(divyc104);   
+divyc105.textContent =  dress19[0].name;   
+divyc105.style.width = "70%";
+divyc105.style.margin = "0px 0px 0px 0px"; 
+style(divyc105);  
+
+console.log(divyc105); 
+divyc106.textContent =  dress19[0].price; 
+divyc106.style.width = "90%";
+divyc106.style.margin = " 0px 0px 200px 0px"; 
+style(divyc106);    
+
+console.log(divyc106);   
+divyc103.margin = "0px 0px 0px 0px";
+divyc103.append(divyc104,divyc105,divyc106);
+console.log(divyc103);
+
+
+divy100.append(imgy102,divyc103);
+divy100.style.marginLeft = "200px"; 
+divy100.onclick=function(){
+    dress.push(dress19[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress19[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+console.log(divy100);
+
+
+
+// parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7,divp100,divy100);  
+
+//==================================================================================
+        // 10th image
+//==================================================================================
+let divz7 = document.createElement("div");
+let divz100 = document.createElement("div"); 
+// let divz10 = document.createElement("div");
+// let divz101 = document.createElement("div");
+
+// third image 
+let imgz102 = document.createElement("img");
+
+imgz102.src = dress20[0].img;
+imgz102.style.width = "45%";
+// img102.style.marginLeft = "-40%";
+// divz100.style.width = "90%"; 
+//  img102.style.margin = "50px 50px 0px 50px";
+
+// divz100.append(img102); 
+//  divz7.style.display = "flex";    
+//  divz7.append(divz80,divz90,divz100);
+
+// content============================================================================
+
+let divzc103 = document.createElement("div");
+let divzc104 = document.createElement("div");
+let divzc105 = document.createElement("div");
+let divzc106 = document.createElement("div");
+divzc104.textContent = "NEW";
+divzc104.style.width = "70%";
+divzc104.style.margin = " 0px 0px 0px 0px"; 
+// style(divzc104); 
+divzc104.style.fontFamily = "Neue-Helvetica, Helvetica, Arial, sans-serif";
+divzc104.style.fontSize = "18px";
+divzc104.style.color = "black";
+divzc104.style.lineHeight = "24px";
+divzc104.style.fontWeight = "500"; 
+
+console.log(divzc104);   
+divzc105.textContent =  dress20[0].name;    
+divzc105.style.width = "70%";
+divzc105.style.margin = "0px 0px 0px 0px"; 
+style(divzc105);  
+
+console.log(divzc105); 
+divzc106.textContent =  dress20[0].price; 
+divzc106.style.width = "90%";
+divzc106.style.margin = " 0px 0px 200px 0px"; 
+style(divzc106);    
+
+console.log(divzc106);   
+divzc103.margin = "0px 0px 0px 0px";
+divzc103.append(divzc104,divzc105,divzc106);
+console.log(divzc103);
+
+
+divz100.append(imgz102,divzc103); 
+divz100.style.marginLeft = "200px";
+console.log(divz100);
+
+divz100.onclick=function(){
+    dress.push(dress20[0]);
+            localStorage.setItem("Zara_cart_dresses",JSON.stringify(dress));
+
+            window.location.href="specific-prod.html"
+            let shop = JSON.parse(localStorage.getItem("cart"))
+            shop[0].img1 = dress20[0].img;
+            localStorage.setItem("cart",JSON.stringify(shop))
+}
+parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7,divy100,divz100,divp100);  
+
+// //======================================================================================
+
+// // parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divy100,divz100,divo7,divp100);  
+
+// // parent.append(div1,divc,div2,div3,div4,divc3,div7,divm7,divn7,divo7,divp100); 
+var logindata=JSON.parse( localStorage.getItem("logindata"));
+var Name=logindata[logindata.length-1].name;
+console.log(Name)
+var putname=document.getElementById("loggin");
+putname.textContent=Name;
+</script>
+</body>
+
+</html>

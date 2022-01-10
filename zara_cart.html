@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #main{
+        width: 100%;
+      
+        margin: auto;
+    }
+         .header1{
+            position:fixed;
+            display: flex;
+            margin-top: -190px;
+            background-color:white;
+        }
+       
+        .d1{ 
+            height: 100px;
+            width: 100px; 
+        }
+        .headerimg{
+         height: 100px;
+         width: 220px;
+        }
+        .d2{
+          height: 50px;
+          width: 80px;
+          margin-left: 800px;
+          
+        }
+        .hcolor{
+            color: black;
+        }
+        
+        .acolor{
+            text-decoration: none;
+        }
+
+        .d3{
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+       
+        .d5{
+            height: 400px;
+           width: 300px;
+            border: 1px solid red;
+            display: inline-block;
+        }
+        .d6{
+          height: 400px;
+           width: 1024px;
+          background-color: azure;
+          margin-left: 100px;
+        }
+        .d7{
+           margin-top: 200px;
+           height: 50px;
+           width: 800px;
+           margin-left: 100px;
+        }
+        .d8{
+           margin-top: 100px;
+           margin-left: 100px;
+        }
+        /* .d9{
+           height: 200px;
+           background-color: rgb(255, 255, 255);
+           width: 1024px;
+           margin-top: 280px;
+           position: fixed;
+        } */
+        /* #sum{
+           height: 200px;
+           background-color: rgb(255, 255, 255);
+           width: 1024px;
+           margin-top: 280px;
+           display: inline-block;
+           position: fixed;
+        } */
+        #sum{
+            display: grid;
+            grid-template-columns: 120px 35px;
+            grid-template-rows: 100px;
+            text-align: right;
+        }
+        #fixed{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px;
+            position: fixed;
+            margin-left: 800px;
+            bottom: -10px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 8px;
+            font-family: Franklin Gothic ;
+        }
+        .thead{
+            font-family: Franklin Gothic medium ;
+        }
+        .td1{
+            width: 200px;
+        }
+        .td2{
+            width: 120px;
+        }
+        .table1{
+           width: 1100px;
+           font-family: Franklin Gothic ;
+           font-size: 11PX;
+        }
+        .td3{
+         text-align: end;
+        }
+       .textmargin{
+           margin: 1px;
+           font-family: Franklin Gothic;
+           font-size: 10px;
+       }
+       .btn_continue{
+       background-color: black;
+       color: white;
+       /* margin: 1000px; */
+       padding: 15px;
+       padding-left: 70px;
+       padding-right: 70px;
+       margin-bottom: -50px;
+    
+       }
+       @media only screen and (max-width: 600px) {
+        #fixed{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px;
+            /* position: fixed;
+            margin-left: 800px;
+            bottom: -10px; */
+            margin: auto;
+        }
+       }
+       .btn_continue:hover {
+            box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+        }
+    
+        #scrollmenu {
+            /* background-color: #333; */
+            overflow: auto;
+            white-space: nowrap;
+            /* display: inline-block; */
+            /* text-align: center; */
+            margin-left: 100px;
+        }
+
+        #scrollmenu {
+            display:flex;
+            vertical-align: top;
+            color: white;
+            text-align: left;
+            padding: 14px;
+            text-decoration: none;
+        }
+        img{
+            width: 230px;
+            height: 350px;
+        }
+
+        #scrollmenu a:hover {
+            background-color: #777;
+        }
+        
+</style>
+</head>
+<body>
+    <div id = "main">
+    <div class="header1">
+        <div class="d1"></div>
+        <div><a href="zarahome.html"><img class="headerimg" src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE-720x303.png"></a></div>
+    <div class="d2">
+        <a href="Login.html" class="hcolor acolor">LOG IN</a>&nbsp;&nbsp;&nbsp;
+        <a href="Help.html" class="hcolor acolor"> HELP</a>
+    </div>
+    </div>
+    <div class="d3">
+        <h2 class="thead">SHOPPING BAG</h2>
+    </div>
+    <div id = "fixed">
+        <div id="sum">
+            <div><p style="font-family: Neue-Helvetica,Helvetica, Arial, sans-serif; color: #616161; font-size: 12px;">Total: ₹</p></div>
+            <div><p id = "total"></p></div> 
+        </div>
+        <div class="d9">
+            <a class="btn_continue" href="shiipingpage.html">CONTINUE</a>
+        </div>
+    </div>
+    
+
+<div id="scrollmenu" >
+  
+</div>
+
+
+<div class="d7">
+    <table>
+        <tr style="font-family: 'Courier New', Courier, monospace;">
+    <td class="td1 thead">HELP</td>  &nbsp;&nbsp;&nbsp;&nbsp;
+    <td class="thead">FOLLOW US  &nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td class="td2 thead">COMAPANY</td>&nbsp;&nbsp;&nbsp;&nbsp;
+    <td class="thead">POLICIES</td>&nbsp;&nbsp;&nbsp;&nbsp;
+ </tr>
+    <tr>
+        <td><a href="">SHOP AT ZARA.COM</a></td>
+        <td><a href="">NEWSLETTER</a></td>
+        <td><a href="">ABOUT US</a></td>
+        <td><a href="" >PRIVACY POLICY</a></td>
+    </tr>
+    <tr>
+     <td><a href="">PRODUCT</a></td>
+     <td><a href="">TIKTOK</a></td>
+     <td><a href="">OFFICES</a></td>
+     <td><a href="" >PURCHASE CINDITION</a></td>
+ </tr>
+ <tr>
+     <td><a href="">PAYMENT</a></td>
+     <td><a href="">INSTAGRAM</a></td>
+     <td><a href="">STORES</a></td>
+     <td><a href="" >COOKIES SETTINGS</a></td>
+ </tr>
+ <tr>
+     <td><a href="">SHIPPING</a></td>
+     <td><a href="">FACEBOOK</a></td>
+     <td><a href="">WORK WITH US</a></td>
+ </tr>
+ <tr>
+     <td><a href="">EXCHANGES AND RETURNS</a></td>
+     <td><a href="">TWITTER</a></td>
+ </tr>
+ <tr>
+     <td><a href="">SHOPS AND COMPANY</a></td>
+     <td><a href="">PINTEREST</a></td>
+ </tr>
+ <tr>
+     <td><a href="">CLOTHES COLLECTION PROGRAMME</a></td>
+     <td><a href="">YOUTUBE</a></td>
+ </tr>
+ <tr>
+     <td><a href="">MY ACCOUNT</a></td>
+ </tr>
+ </table>  
+ </div>
+ </div>
+ <hr style="margin-top: 300px; width: 1000px; margin-left: 8%;">
+ <div class="d8">
+ <table class="table1">
+     <tr>
+         <td>INDIA</td>
+         <td class="td3">ENGLISH</td>
+     </tr>
+      <tr>
+         <td></td>
+         <td class="td3" style="color: gray;">&copy; ALL RIGHT RESERVED</td>
+     </tr>
+ </table>
+ </div>
+ <div class="d8" >
+     <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+     <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+     <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+ </div>
+</div>
+
+
+</body>
+</html>
+
+
+<script>
+  
+    
+    let sum = 0;
+    let count = 1;
+    let parent = document.getElementById("scrollmenu");
+   let cart = JSON.parse(localStorage.getItem("Zara_cart_dresses"));
+   //console.log(cart)
+       cart.forEach(function(el){
+       let img = document.createElement('img');
+       let div = document.createElement('div');
+       div.style.backgroundColor = "white"
+       div.style.minWidth = "200px"
+       div.style.marginLeft = "20px"
+       img.src = el.img;
+       //console.log(img)
+       let count = 1;
+
+       let name = document.createElement("p");
+    //    size and color is added
+       let size = document.createElement('p');
+       size.style.color="black"
+       size.style.fontSize="12px"
+       size.style.fontFamily="sans-serif;"
+       size.style.fontWeight="600"
+       size.textContent=el.size;
+    //    console.log(size);
+
+       let color = document.createElement('p');
+       color.style.color="black";
+       color.style.fontSize="12px"
+       color.style.fontFamily="sans-serif;"
+       color.style.fontWeight="600"
+       color.textContent=el.colour;
+    //    console.log(color);
+       //    size and color is added end
+       let price = document.createElement('p');
+       let delete_item = document.createElement('img');
+       let div1 = document.createElement('div')
+       let div2 = document.createElement('div')
+
+       div1.innerHTML = "&nbsp"
+       div2.innerHTML = "&nbsp"
+
+       delete_item.style.width = "15px";
+       delete_item.style.height = "15px";
+
+    //    delete.style.onclick = delete_item();
+       delete_item.src = "https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-delete-multimedia-kiranshastry-lineal-kiranshastry.png"
+       delete_item.onclick = function(){
+        quantity.textContent="0";
+        total_block.innerHTML="";
+       sum=sum-Number(price.textContent);
+       total_block.append(sum);
+       if(quantity.textContent=="0"){
+         div.style.display="none";
+         img.style.display="none";
+        }
+       }
+       delete_item.style.cursor = "pointer";
+        //console.log(delete_item);
+        // delete_item.style.background-color = "black"
+
+       name.textContent = el.name;
+       price.textContent = el.price;
+
+       name.style.color = "black";
+       price.style.color = "black";
+       name.style.fontSize = "10px"
+       name.style.fontWeight = "650"
+       price.style.fontWeight = "650"
+
+        let div_quan = document.createElement('div');
+        div_quan.style.display = "grid";
+        div_quan.style.gridTemplateColumns = "15px 30px 15px";
+        div_quan.style.gridTemplateRows = "15px";
+        div_quan.style.gridGap = "10px";
+// editedAnmol
+        let quantity = document.createElement('p');
+      quantity.style.marginTop="6px";
+    
+    
+    
+        quantity.textContent = 1;
+       
+       let plus = document.createElement('button');
+       plus.style.border="none";
+       plus.style.fontSize="20px"
+      plus.onclick=function(){
+       total_block.innerHTML="";
+       quantity.textContent=Number(quantity.textContent )+1;
+       price.textContent = Number(el.price)*Number(quantity.textContent);
+       
+       sum=sum+Number(el.price);
+       total_block.append(sum);
+
+
+       if(localStorage.getItem("totalvalue")===null){
+        localStorage.setItem("totalvalue",JSON.stringify([]))
+    }
+    var total = JSON.parse( localStorage.getItem("totalvalue"))
+total.push(sum);
+localStorage.setItem("totalvalue",JSON.stringify(total))
+      
+      }
+       plus.style.backgroundColor="white";
+       let neg = document.createElement('button');
+       neg.style.border="none";
+       neg.style.fontSize="20px"
+       neg.style.backgroundColor="white";
+       neg.innerText = "-";
+       neg.onclick=function(){
+      
+       quantity.textContent=Number(quantity.textContent )-1;
+       price.textContent =price.textContent-Number(el.price);
+       total_block.innerHTML="";
+       sum=sum-Number(el.price);
+       total_block.append(sum);
+       if(quantity.textContent=="0"){
+         div.style.display="none";
+         img.style.display="none";
+        }
+      }
+       plus.textContent = "+";
+       // editedAnmolend
+       quantity.style.color = "black";
+       quantity.style.textAlign = "center"
+       plus.style.color = "black";
+       neg.style.color = "black";
+       plus.style.cursor = "pointer";
+       neg.style.cursor ="pointer";
+       
+
+    //    if(plus.onclick = function(){
+    //        count++;
+    //        el.price = el.price * count;
+    //        console.log(el.price);
+    //        if(el.quantity === undefined){
+               
+    //         //    let quan = localStorage.setItem("cart",JSON.stringify(count));
+               
+    //             console.log(count);
+    //         }
+    //    }) 
+       
+       div_quan.append(neg,quantity,plus)
+       
+
+       //console.log(quan)
+    //    console.log(el.price);
+       
+       sum = sum + Number(el.price);
+    //    console.log(sum);
+    //    el.price = 1;
+      
+    //    name.style.fontStyle = "italic"
+    //    name.style.backgroundColor = "pink"
+       name.style.fontFamily = "Neue-Helvetica,Helvetica, Arial, sans-serif"
+    
+       div.append(name,color,price,size,div_quan,div1,div2,delete_item);
+
+       //console.log(name);
+       parent.append(img,div);
+       //console.log(parent)
+       
+   })
+//    el.price = 1;
+//    console.log(sum);
+   let total_block = document.getElementById("total");
+   total_block.style.fontSize = "12px";
+   total_block.style.fontWeight = "600";
+   total_block.style.color = "#616161"
+   total_block.append(sum);
+
+//    function remove(el){
+//     cart.removeItem(el);
+//    }
+    if(localStorage.getItem("totalvalue")===null){
+        localStorage.setItem("totalvalue",JSON.stringify([]))
+    }
+    var total = JSON.parse( localStorage.getItem("totalvalue"))
+total.push(sum);
+localStorage.setItem("totalvalue",JSON.stringify(total))
+
+
+var logindata=JSON.parse( localStorage.getItem("logindata"));
+var Name=logindata[logindata.length-1].name;
+console.log(Name)
+var putname=document.getElementById("loggin");
+putname.textContent=Name;
+</script>

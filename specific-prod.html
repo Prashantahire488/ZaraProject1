@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ham{
+            width: 30px;
+            margin-left: 10px;
+       
+
+        }
+        #ham{
+  display: inline-block;
+  cursor: pointer;
+  
+}
+        
+        #header{
+            position: fixed;
+            display: grid;
+            /* border: solid; */
+            margin-top: 1%;
+            grid-template-columns: 40px 200px 200px 400px;
+            grid-template-rows: 100px;
+          
+        }
+
+        #zaraheader{
+            
+       position: fixed;
+            margin-left: 6%;
+            cursor: pointer;
+          
+          
+        }
+     
+        #search{
+           
+            width: 100px;
+          /* border: solid; */
+            font-size: 14px;
+            margin-left: 1020px;
+          
+          
+        }
+        a{
+            text-decoration: none;
+            color: rgb(54, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #search>div{
+            width: 100%;
+            background-color:rgb(83, 81, 81);;
+            height: 2px;
+            margin-top: 3px;
+            /*border: solid;*/
+        }
+     #logbox{
+       
+         display: flex;
+        width: 500px;
+      margin-left: 600px;
+         
+        
+     }
+     #logbox>div{
+        margin-right: 1px;
+        margin-left: 40px;
+         
+         font-size: 9px;
+         font-weight: 500;
+         text-align: end;
+         /* margin-top: 6%; */
+        
+     }
+     #picbox{
+         border: solid 1px white
+         /* display: flex; */
+         /* margin-top: 7%; */
+       
+     }
+     #mainimg{
+         width: 570px;
+         margin: auto;
+       
+     }
+     #mainimg>img{
+         width: 100%;
+         margin-top: 25%;
+        
+     }
+     #man{
+         
+        font-size: 10px;
+        height: 30px;
+         margin-top: 360px;
+      display: flex;
+        
+         
+         
+     }
+  
+     #kids{
+        
+         height: 20px;
+         font-size: 10px;
+         margin-top: 360px;
+     }
+ 
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+ #secondndpage{
+     width: 82%;
+     
+     margin: auto;
+     margin-top: 30%;
+
+ }
+ #email{
+     width: 300px;
+     height: 30px;
+     display: block;
+     
+ }
+ input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: white;
+}
+#email:focus {
+  outline: none;
+}
+.headerimg{
+         height: 90px;
+         width: 220px;
+        }
+        .d4{
+            margin-top: 160px;
+            font-size: 10px;
+        }
+        .d5{
+          
+           margin-top: 100px;
+           width: 700px;
+           border-top-style: groove;
+           font-size: 10px;
+          }
+          h5{
+              margin-bottom: -10px;
+          }
+          .mySlides {display:none;}
+          .rightbtn{
+              font-size: 25px;
+          
+             border: none;
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+              
+          }
+          .leftbtn{
+              
+              font-size: 25px;
+              border: none;
+           
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+          }
+          .leftbtn:hover{
+          
+           background-color: darkgray;
+           
+          }
+          .rightbtn:hover{
+            background-color: darkgray;
+            
+          }
+          /* sidebarstart */
+          .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: 46px;
+  
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+button{
+    border: none;
+    background-color: white;
+}
+.sidebar>button{
+display: block;
+margin-left: 10px;
+margin-top: 1%;
+}
+          /* sidebarend */
+          /* dropdownstart */
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+}
+/* 2dropdown */
+.dropdown-content2 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  text-align: start;
+}
+.dropdown-content2{
+    display: none;
+   margin-left: -40px;
+}
+
+/* 3rd dropdown */
+.dropdown-content3 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  text-align: start;
+}
+.dropdown-content3{
+    display: none;
+   margin-left: -40px;
+}
+
+/* 4thdropdown */
+.dropdown-content4 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  text-align: start;
+
+  
+}
+.dropdown-content4{
+    display: none;
+   margin-left: -40px;
+}
+
+/* 5th dropdown */
+.dropdown-content5 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 10px;
+  text-align: start;
+}
+.dropdown-content5{
+    display: none;
+   margin-left: -40px;
+}
+
+/* .dropdown a:hover {background-color: #ddd;} */
+
+.show {display: block;}
+          /* dropdownend */
+          #leftA{
+              margin-top: 14px;
+          }
+       /* helpcss */
+   
+
+        #help {
+            margin: 0px 150px 70px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif; 
+            font-size: 22px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+            line-height: 28px;
+        }
+        #icons {
+            /* border: 2px solid blue; */
+            display : grid;
+            gap: 4px;
+            margin-left: 80px;            
+            grid-template-columns: 180px 180px 180px 180px 180px 180px;
+            grid-template-rows: 50% 50%;
+        }
+        #icons div {
+            /* border: 2px solid red; */
+            margin-left: 50px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        img {
+            width: 30%;
+            color: black;
+            padding-left: 50px;          
+        }
+        p {
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif; 
+            font-size: 11px;
+            font-style: normal;
+            color: black;
+            font-weight: 500;
+            line-height: 16px;
+            text-align: center;
+        }
+        #icons > div:nth-child(7) > p{ 
+            line-height: 2px;
+        }
+        /* helpcssend */
+
+        /* infocss */
+        .d6{
+          height: 400px;
+           width: 1024px;
+          background-color: azure;
+          margin-left: 100px;
+        }
+        .d7{
+           margin-top: 200px;
+           height: 50px;
+           width: 800px;
+           margin-left: 100px;
+        }
+        .d8{
+           margin-top: 100px;
+           margin-left: 100px;
+        }
+        .thead{
+            font-family: Franklin Gothic medium ;
+        }
+        .td1{
+            width: 200px;
+        }
+        .td2{
+            width: 120px;
+        }
+        .table1{
+           width: 1100px;
+           font-family: Franklin Gothic ;
+           font-size: 11PX;
+        }
+        .td3{
+         text-align: end;
+        }
+       .textmargin{
+           margin: 1px;
+           font-family: Franklin Gothic;
+           font-size: 10px;
+       }
+       td>a{
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+            font-family: Franklin Gothic ;
+        }
+
+       
+
+        /* specific product */
+        #main{
+            width: 1230px;
+            /* border: 1px solid blue; */
+        }
+        #head_gaj
+        {
+            width: 85%;
+            height: 100px;
+            margin: auto;
+            /* border: 1px solid green; */
+        }
+        #scrollmenu {
+            /* background-color: #333; */
+            overflow-y: auto;
+            overflow-x: visible;
+            white-space: wrap;
+            /* border: 1px solie black; */
+            height: 700px;
+            width: 550px;
+            margin: auto;
+            /* display: inline-block; */
+            /* text-align: center; */
+            margin-left: 400px;
+            margin-top: -100px;
+            display:flex;
+            flex-direction: column;
+            /* vertical-align: top; */
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+        }
+        img{
+            width: 90%;
+            /* height: 780px; */
+        }
+        #scrollmenu a:hover {
+            background-color: #777;
+        }
+        #inline_gaj{
+            display: flex;
+            /* grid-template-columns: 320px 30px;
+            grid-template-rows: 100%; */
+            /* border: 1px solid black; */
+        }
+        #hover_gaj{
+            width: 30px;
+            height: 490px;
+            /* border: 1px solid black; */
+            margin-right: 230px;
+            margin-top: -80px;
+        }
+        #hover_gaj{
+            visibility: hidden;
+        }
+       
+        #scrollmenu:hover + #hover_gaj { visibility: visible;}
+        #material{
+            display: grid;
+            grid-template-columns: 130px;
+            grid-template-rows: 20px 20px 100px;
+            /* border: 1px solid blue; */
+            margin-top: -360px;
+           
+            margin-left: 100px;
+            /* border: solid; */
+        }
+        #first{
+            font-size: 11px;
+            line-height: 16px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+        }
+        #second{
+            font-size:11px;
+            line-height: 40px;
+            margin-top: 15px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+        }
+        #third{
+            font-size: 9px;
+            margin-top: 25px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+        }
+        #material>p{
+          text-align: start;
+        }
+        #product_detail{
+            display: grid;
+            grid-template-columns: 200px;
+            grid-template-rows: 50px 100px 20px 15px 20px 20px 20px 20px 20px;
+            /* border: 1px solid greenyellow; */
+            margin-top: -340px;
+            margin-left: 1070px;
+            vertical-align: top;
+        }
+        #product_detail>p{
+          text-align: start;
+        }
+        #name_tag{
+            font-size: 20px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            margin-top: -60px;
+            line-height: 20px;
+        }
+        #seq1{
+            font-size: 11px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            margin-top: -50px;
+        }
+        #price_tag{
+            font-size: 9px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            margin-top: -50px;
+        }
+        #seq2{
+            font-size: 9px;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            margin-top: -60px;
+        }
+        select {
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom-width: 190%;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            color: #535e62;
+            font-size: 10px;
+            margin-top: -50px;   
+        }
+        #button_margin_left{
+        width: 200px;
+        height: 30px;
+        /* margin-left: 100px; */
+        color: white;
+        background-color: black;
+        font-size: 8px;
+        cursor: pointer;
+        }
+        #button_margin_left:hover {
+            box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+        }
+       
+    </style>
+</head>
+<body style="background-color: #ffffff;" id="body">
+    <div id="container">
+        <div id="header">
+            <!-- ham moving function myFunction(this) -->
+    <div id="ham" onclick=" openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="zaraheader" onclick="headclick()">
+        <!-- <div>Z</div>
+        <div>A</div>
+        <div>R</div>
+        <div>A</div> -->
+        <div><a href="zarahome2.html"><img class="headerimg" src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE-720x303.png"></a></div>
+    </div>
+<div id="search">
+    <a href="SEARCh.html" >SEARCH</a>
+    <div></div>
+   
+</div>
+<div id="logbox">
+<div id="loggin"><a href="login.html" style="margin-right: -250px; padding-left: 60px;">LOG IN</a></div>
+<div id="cart"> <a href="help.html">HELP</a></div>
+<!-- <div id="help"><a href="Help.html">HELP</a></div> -->
+
+
+</div>
+
+    </div>
+    <div id="picbox">
+      <div id = "main">
+        <div id = "head_gaj"></div>
+        <div id = "inline_gaj" >
+            <div id="scrollmenu">
+
+            </div>
+            <div id = "hover_gaj" onMouseOver="show_sidebar()"     onMouseOut="hide_sidebar()">
+
+            </div>
+        </div>
+        <div id = "material">
+            <p id = "first"><b>MATERIALS,CARE AND ORIGIN</b></p>
+        
+            <p id = "second">MATERIALS</p>
+            <p id = "third">We work with monitoring programmes to ensure compliance with safety, health and quality standards for our products. 
+                The Green to Wear 2.0 standard aims to minimise<h6>the environmental impact of textile </h6><p>manufacturing. To that end, we have developed Inditex’s The List programme, which helps guarantee both that production processes are clean and that our garments are safe and healthy. </p></p>
+        </div>
+        <div id = "product_detail">
+            <p id = "name_tag">SHINY BUSTIER LIMITED EDITION</p>
+            <p id = "seq1">BUSTIER WITH A STRAIGHT NECKLINE AND EXPOSED SHOULDERS. METALLIC THREAD DETAIL. FRAYED TRIMS. MATCHING INTERIOR LINING. INVISIBLE SIDE ZIP FASTENING.</p>
+            <p id = "price_tag">₹3748</p>
+            <p id = "seq2">MRP incl. of all taxes</p>
+            
+            <select name="state" class="state-select"  >
+             
+                <option value="XL">Size</option> 
+                <option value="L">L</option> 
+                <option value="M">M</option>
+                <option value="S">S</option> 
+            </select>
+            <div>
+                <a href="zara_cart.html"><button id = "button_margin_left"><strong>Add To Basket</strong></button></a>
+            </div>
+            <p id = "third">Check in-store availability</p>
+            <p id = "third">Delivery, Exchanges and Returns</p>
+            <p id = "third">Share</p>
+        </div>
+    </div>
+
+     
+
+</div>
+<div id="secondndpage">
+    <div class="d7" style="margin-left: 3%;">
+        <table>
+            <tr>
+        <td class="td1 thead">HELP</td>  &nbsp;&nbsp;&nbsp;&nbsp;
+        <td class="thead">FOLLOW US  &nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="td2 thead">COMAPANY</td>&nbsp;&nbsp;&nbsp;&nbsp;
+        <td class="thead">POLICIES</td>&nbsp;&nbsp;&nbsp;&nbsp;
+     </tr>
+        <tr>
+            <td><a href="">SHOP AT ZARA.COM</a></td>
+            <td><a href="">NEWSLETTER</a></td>
+            <td><a href="">ABOUT US</a></td>
+            <td><a href="" >PRIVACY POLICY</a></td>
+        </tr>
+        <tr>
+         <td><a href="">PRODUCT</a></td>
+         <td><a href="">TIKTOK</a></td>
+         <td><a href="">OFFICES</a></td>
+         <td><a href="" >PURCHASE CINDITION</a></td>
+     </tr>
+     <tr>
+         <td><a href="">PAYMENT</a></td>
+         <td><a href="">INSTAGRAM</a></td>
+         <td><a href="">STORES</a></td>
+         <td><a href="" >COOKIES SETTINGS</a></td>
+     </tr>
+     <tr>
+         <td><a href="">SHIPPING</a></td>
+         <td><a href="">FACEBOOK</a></td>
+         <td><a href="">WORK WITH US</a></td>
+     </tr>
+     <tr>
+         <td><a href="">EXCHANGES AND RETURNS</a></td>
+         <td><a href="">TWITTER</a></td>
+     </tr>
+     <tr>
+         <td><a href="">SHOPS AND COMPANY</a></td>
+         <td><a href="">PINTEREST</a></td>
+     </tr>
+     <tr>
+         <td><a href="">CLOTHES COLLECTION PROGRAMME</a></td>
+         <td><a href="">YOUTUBE</a></td>
+     </tr>
+     <tr>
+         <td><a href="">MY ACCOUNT</a></td>
+     </tr>
+     </table>  
+     </div>
+     </div>
+     <hr style="margin-top: 300px; width: 1000px;margin-left: 11%;">
+     <div class="d8">
+     <table class="table1 " style="margin-left: 4%;">
+         <tr>
+             <td>INDIA</td>
+             <td class="td3">ENGLISH</td>
+         </tr>
+          <tr>
+             <td></td>
+             <td class="td3" style="color: gray;">&copy; ALL RIGHT RESERVED</td>
+         </tr>
+     </table>
+     </div>
+     <div class="d8" style="margin-left: 11%;">
+         <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+         <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+         <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+     </div>
+    <!-- <label>JOIN OUR NEWSLETTER</label>
+    <input id="email" placeholder="ENTER YOUR EMAIL ADDRESS HERE" >
+    <div class="d4">
+        <a href="https://www.tiktok.com/@zara" class="hcolor acolor text_size">TIKTOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/zara/" class="hcolor acolor text_size">INSTAGRAM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/Zara" class="hcolor acolor text_size">FACEBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/ZARA" class="hcolor acolor text_size">TWITTER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://es.pinterest.com/zaraofficial" class="hcolor acolor text_size">PINTEREST</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.youtube.com/user/zara" class="hcolor acolor text_size">YOUTUBE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="d5">
+        <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+        <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+        <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+        </div> -->
+        </div>
+      
+       <!-- sidebarstart -->
+       <div id="mySidebar" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+        <button onclick="myFunction()"  id="sidezara" class="dropdown"  >ZARA ATHLETICZ
+            <!-- dropdownstart -->
+            <!-- <div class="dropdown"> -->
+                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">ABOUT</a>
+                  <a href="#about">COLLECTION</a>
+                  <a href="#contact">STORIES</a>
+                  <a href="#about">EXPERIENCE</a>
+                  <a href="#contact">STORES</a>
+                </div>
+              <!-- </div> -->
+              
+              <!-- dropdownend -->
+        </button>
+        <button id="sidewoman" class="dropdown2"  onclick="myFunction2()" >WOMAN
+            <div id="myDropdown2" class="dropdown-content2">
+                <a href="#home">COLLECTION</a>
+                <a href="login.html"> NIGHT POWER COLLECTION</a>
+                <a href="#contact">BLAZERS</a>
+                <a href="#about">DRESSES | JUMPSUITS</a>
+                <a href="#contact">TOPS|BODYSUITS</a>
+                <a href="#home">SHIRTS</a>
+                <a href="login.html">TROUSERS</a>
+                <a href="#contact">T-SHIRTS</a>
+                <a href="#about">JEANS</a>
+                <a href="#contact">SKIRTS&nbsp;| &nbsp;SHORTS</a>
+                <a href="#home">CO-ORD SETS</a>
+                
+                <a href="#contact">SUITS</a>
+                <a href="#about">KNITWEAR</a>
+                <a href="#contact">SWEATSHIRTS</a>
+              </div>
+        </button>
+        <button id="sideman"  class="dropdown3"  onclick="myFunction3()" >MAN
+            <div id="myDropdown3" class="dropdown-content3">
+                <a href="#home">NEW</a>
+                <a href="login.html"> ZARA ATHALETICZ NEW</a>
+                <a href="#contact">COLLECTION</a>
+                <a href="#about">HERITAGE NEW</a>
+                <a href="#contact">JACKETS</a>
+                <a href="#home">OVERSHIRTS</a>
+                <a href="login.html"> GILETS</a>
+                <a href="#contact">BLAZERS</a>
+                <a href="#about">SUITS</a>
+                <a href="#contact">T-SHIRTS</a>
+                <a href="#home">HOODIES | SWEATSHIRTS</a>
+                <a href="login.html">TRACKSUITS</a>
+                <a href="#about">KNITWEAR</a>
+                <a href="#about">POLO SHIRTS</a>
+                
+              </div>
+        </button>
+        <button id="sidekids" class="dropdown4"  onclick="myFunction4()">KIDS
+            <div id="myDropdown4" class="dropdown-content4">
+                <a href="#home">GIRL | 6 - 14 YEARS</a>
+                <a href="login.html"> BOY | 6 - 14 YEARS</a>
+                <a href="#contact"> BABY GIRL | 6 MONTHS - 5 YEARS</a>
+                <a href="#about">BABY BOY | 6 MONTHS  - 5 YEARS</a>
+                <a href="#contact">ACCESSORIES</a>
+                <a href="#contact">ZARASERIES</a>
+                <a href="#contact">BESTSELLERS NEW</a>
+              </div>
+        </button>
+        <button id="sideshoes" class="dropdown5"  onclick="myFunction5()">SHOE&BAGS
+            <div id="myDropdown5" class="dropdown-content5">
+                <a href="#home">WOMAN</a>
+                <a href="login.html"> MAN</a>
+                <a href="#contact">KIDS</a>
+               
+              </div>
+        </button>
+        <button id="sidejoininfo" style="margin-top: 15px;">JOIN INFO</button>
+        <button id="sideinfo">COVID 19 INFO</button>
+        <button id="sideinfo" style="margin-top: 15px;">+INFO</button>
+      </div>
+      <!-- <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      </div> -->
+      
+       <!-- sidebarend -->
+<script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+function headclick(){
+   
+   
+    window.location.href="home1.html"
+}
+var changeimg=document.getElementById("changeimg");
+var imgbox=document.getElementById("mainimg")
+var imgdata=["https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/750/0267420800_1_1_1.jpg?ts=1632730334059",
+"https://static.zara.net/photos///2021/I/T/2/p/0639/644/707/2/w/532/0639644707_15_1_1.jpg?ts=1632389495487",
+"https://static.zara.net/photos///2021/I/0/3/p/6357/494/801/202/w/448/6357494801_15_1_1.jpg?ts=1632394213709",
+"https://static.zara.net/photos///contents/mkt/spots/aw21-north-athleticz-newsletter/layout-figma-athleticz-newsletter//aw21-north-athleticz-newsletter.layout-figma-athleticz-newsletter.desktop-6f6583d207ff3a38f91a0a067fb9d2ce3278ae03-FILL-1.529_0.jpg?ts=1632756031442&imwidth=1440"]
+var i=1;
+var leftA=document.getElementById("leftA")
+var rightA=document.getElementById("rightA");
+var body=document.getElementById("container")
+
+function plusDivs(){
+    if(i==1){
+leftA.textContent="ZARA ATHALETICS";
+leftA.href="athelatics.html";
+rightA.href="woman.html";
+rightA.textContent="WOMAN";
+imgbox.style.width="650px";
+
+
+
+    }
+ else if(i===2){
+    leftA.textContent="MAN";
+    leftA.href="man.html";
+rightA.textContent="WOMAN";
+rightA.href="woman.html";
+imgbox.style.width="600px";
+
+ }
+ else if(i==3){
+  
+    leftA.textContent="WOMAN";
+rightA.textContent="KIDS";
+leftA.href="woman.html";
+rightA.href="kids.html";
+imgbox.style.width="1400px";
+body.style.backgroundColor="black";
+body.style.color="white"
+changeimg.style.marginTop="10px"
+
+changeimg.style.height=""
+ }
+    else{
+        leftA.textContent="MAN";
+rightA.textContent="KIDS";
+leftA.href="man.html";
+rightA.href="kids.html";
+imgbox.style.width="570px";
+body.style.backgroundColor="white";
+body.style.color="black"
+changeimg.style.marginTop="20%";
+
+
+ }
+if(i>3){
+    i=0;
+}
+    if(i>=0){
+       
+changeimg.src=imgdata[i];
+console.log(i)
+i++;  
+    }
+   
+  
+}
+function takeme(){
+    window.location.href="woman.html";
+}
+//sidebarstart
+function openNav() {
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("body").style.marginLeft = "30px";
+  document.getElementById("container").style.opacity="0.1"
+
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("body").style.marginLeft= "10px";
+document.getElementById("container").style.opacity="1"
+}
+// sidebarend
+// dropdownstart
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#sidezara')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidewoman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidekids')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideshoes')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content5");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+// dropdown end
+
+// specific product
+let parent = document.getElementById("scrollmenu");
+    let parent1 = document.getElementById("hover_gaj");
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    var zara_cart= JSON.parse( localStorage.getItem("Zara_cart_dresses"))
+    //console.log(cart.length);
+    cart.forEach(function(el){
+        
+            let img1 = document.createElement('img');
+            let img2 = document.createElement('img');
+            let img3 = document.createElement('img');
+            let img4 = document.createElement('img');
+            let img5 = document.createElement('img');
+            let img6 = document.createElement('img');
+            let img7 = document.createElement('img');
+            
+            img1.src = el.img1;
+            img2.src = el.img2;
+            img3.src = el.img3;
+            img4.src = el.img4;
+            img5.src = el.img5;
+            img6.src = el.img6;
+            img7.src = el.img7;
+//          
+           
+// 
+            let img8 = document.createElement('img');
+            let img9 = document.createElement('img');
+            let img10 = document.createElement('img');
+            let img11 = document.createElement('img');
+            let img12 = document.createElement('img');
+            let img13= document.createElement('img');
+            let img14= document.createElement('img');
+            img8.src = el.img1;
+            img9.src = el.img2;
+            img10.src = el.img3;
+            img11.src = el.img4;
+            img12.src = el.img5;
+            img13.src = el.img6;
+            img14.src = el.img7;
+            
+            img8.style.width = "20px"
+            img9.style.width = "20px"
+            img10.style.width = "20px"
+            img11.style.width = "20px"
+            img12.style.width = "20px"
+            img13.style.width = "20px"
+            img14.style.width = "20px"
+
+            img8.style.height = "30px"
+            img9.style.height = "30px"
+            img10.style.height = "30px"
+            img11.style.height = "30px"
+            img12.style.height = "30px"
+            img13.style.height = "30px"
+            img14.style.height = "30px"
+
+            img8.style.padding = "2px"
+            img9.style.padding = "2px"
+            img10.style.padding = "2px"
+            img11.style.padding = "2px"
+            img12.style.padding = "2px"
+            img13.style.padding = "2px"
+            img14.style.padding = "2px"
+
+// price insert
+var price=document.getElementById("price_tag");
+price.textContent=zara_cart[zara_cart.length-1].price
+
+
+            //console.log(img1);
+            parent1.append(img8,img9,img10,img11,img12,img13,img14);
+            parent.append(img1,img2,img3,img4,img5,img6,img7);
+        
+    })
+    var logindata=JSON.parse( localStorage.getItem("logindata"));
+var Name=logindata[logindata.length-1].name;
+console.log(Name)
+var putname=document.getElementById("loggin");
+putname.textContent=Name;
+</script>
+</body>
+
+</html>

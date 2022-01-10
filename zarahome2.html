@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ham{
+            width: 30px;
+            margin-left: 10px;
+       
+
+        }
+        #ham{
+  display: inline-block;
+  cursor: pointer;
+  
+}
+        
+        #header{
+            position: fixed;
+            display: grid;
+            /* border: solid; */
+            margin-top: 1%;
+            grid-template-columns: 40px 200px 200px 400px;
+            grid-template-rows: 100px;
+          
+        }
+
+        #zaraheader{
+            
+       position: fixed;
+            margin-left: 10%;
+            cursor: pointer;
+          /* border: solid; */
+          
+        }
+        /* #zaraheader>div:nth-child(2){
+            display: inline-block;
+           font-size: 110px;
+          
+           width: 40px;
+           color: rgb(14, 12, 12);
+           font-family:  "Didot";
+           
+          
+            
+        }
+        #zaraheader>div:nth-child(1){
+            display: inline-block;
+           font-size: 110px;
+           width: 27px;
+          
+           font-family:  "Didot";
+           color: rgb(14, 12, 12);
+          
+            
+        }
+        #zaraheader>div:nth-child(3){
+            display: inline-block;
+           font-size: 110px;
+           margin-left: 10px ;
+           font-family:  "Didot";
+           color: rgb(14, 12, 12);
+           
+        }
+        #zaraheader>div:nth-child(4){
+            display: inline-block;
+           font-size: 110px;
+           width: 34px;
+          
+           margin-left: -47px;
+         font-family:  "Didot";
+         color: rgb(14, 12, 12);
+          
+            
+        } */
+        #search{
+           
+            width: 100px;
+          /* border: solid; */
+            font-size: 14px;
+            margin-left: 1020px;
+          
+          
+        }
+        a{
+            text-decoration: none;
+            color: rgb(54, 51, 51);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #search>div{
+            width: 100%;
+            background-color:rgb(83, 81, 81);;
+            height: 2px;
+            margin-top: 3px;
+            /*border: solid;*/
+        }
+     #logbox{
+       
+         display: flex;
+         width: 260px;
+         margin-left: 920px;
+         /* border: solid; */
+        
+     }
+     #logbox>div{
+         width: 84px;
+         /* border: solid; */
+         font-size: 9px;
+         font-weight: 500;
+         text-align: end;
+         /* margin-top: 6%; */
+        
+     }
+     #picbox{
+         display: flex;
+         /* margin-top: 7%; */
+        /* border: solid; */
+     }
+     #mainimg{
+         width: 570px;
+         margin: auto;
+       
+     }
+     #mainimg>img{
+         width: 100%;
+         margin-top: 25%;
+        
+     }
+     #man{
+         
+        font-size: 10px;
+        height: 30px;
+         margin-top: 380px;
+      display: flex;
+        
+         
+         
+     }
+  
+     #kids{
+        
+         height: 30px;
+         font-size: 10px;
+         margin-top: 360px;
+     }
+ 
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+ #secondndpage{
+     width: 82%;
+     
+     margin: auto;
+     margin-top: 30%;
+
+ }
+ #email{
+     width: 300px;
+     height: 30px;
+     display: block;
+     
+ }
+ input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: white;
+}
+#email:focus {
+  outline: none;
+}
+.headerimg{
+         height: 90px;
+         width: 220px;
+        }
+        .d4{
+            margin-top: 160px;
+            font-size: 10px;
+        }
+        .d5{
+          
+           margin-top: 100px;
+           width: 700px;
+           border-top-style: groove;
+           font-size: 10px;
+          }
+          h5{
+              margin-bottom: -10px;
+          }
+          .mySlides {display:none;}
+          .rightbtn{
+              font-size: 25px;
+         
+             border: none;
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+              
+          }
+          .leftbtn{
+            
+              font-size: 25px;
+           
+              border: none;
+           
+              background-color: white;
+              font-family: 'Courier New', Courier, monospace;
+              
+          }
+          .leftbtn:hover{
+          font-size: 26px;
+          color: thistle;
+           /* background-color: darkgray; */
+           
+          }
+          .rightbtn:hover{
+            /* background-color: darkgray; */
+            font-size: 24px;
+            color: thistle;
+          }
+          /* sidebarstart */
+          .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: 46px;
+  
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+button{
+    border: none;
+    background-color: white;
+}
+.sidebar>button{
+display: block;
+margin-left: 10px;
+margin-top: 1%;
+}
+          /* sidebarend */
+          /* dropdownstart */
+ 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: -22px;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+/* 2dropdown */
+.dropdown-content2 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  margin-top: -10px;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+ 
+}
+.dropdown-content2{
+    display: none;
+   margin-left: -22px;
+}
+
+/* 3rd dropdown */
+.dropdown-content3 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+.dropdown-content3{
+    display: none;
+    margin-left: -22px;
+}
+
+/* 4thdropdown */
+.dropdown-content4 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+  
+}
+.dropdown-content4{
+    display: none;
+    margin-left: -22px;
+}
+
+/* 5th dropdown */
+.dropdown-content5 a {
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  text-align: start;
+  margin-top: -10px;
+}
+.dropdown-content5{
+    display: none;
+   margin-left: -22px;
+}
+
+/* .dropdown a:hover {background-color: #ddd;} */
+
+.show {display: block;}
+          /* dropdownend */
+          #leftA{
+              margin-top: 14px;
+          }
+       
+    </style>
+</head>
+<body style="background-color: #ffffff;" id="body">
+    <div id="container">
+        <div id="header">
+            <!-- ham moving function myFunction(this) -->
+    <div id="ham" onclick=" openNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div id="zaraheader" onclick="headclick()">
+        <!-- <div>Z</div>
+        <div>A</div>
+        <div>R</div>
+        <div>A</div> -->
+        <div><a href="zarahome.html"><img class="headerimg" src="https://1000logos.net/wp-content/uploads/2017/05/Zara-log%D0%BE-720x303.png"></a></div>
+    </div>
+<div id="search">
+    <a href="SEARCh.html" >SEARCH</a>
+    <div></div>
+   
+</div>
+<div id="logbox">
+<div id="loggin"><a href="login.html">LOG IN</a></div>
+<div id="help"><a href="Help.html">HELP</a></div>
+<div id="cart"> <a href="zara_cart.html" id="checkcountcart">CART(0)</a></div>
+</div>
+
+    </div>
+    <div id="picbox">
+        <div id="man"><button class="leftbtn" onclick="plusDivs()">&#10094;</button>
+            <a href="man.html" id="leftA"> MAN</a>
+        </div>
+      
+        <div id="mainimg" onclick="takeme()"><img id="changeimg" src="https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/750/0267420800_1_1_1.jpg?ts=1632730334059">
+            
+            <div style="font-size: 13px;">INTRODUCING THE FALL/WINTER 2021 COLLECTION</div>
+        </div>
+    
+        <div id="kids"><a href="kids.html" id="rightA">KIDS </a><button class="rightbtn" onclick="plusDivs()"><p>&#10095;</p></button></div>
+    </div>
+
+    <!-- continer end -->
+</div>
+<div id="secondndpage">
+    <label>JOIN OUR NEWSLETTER</label>
+    <input id="email" placeholder="ENTER YOUR EMAIL ADDRESS HERE" >
+    <div class="d4">
+        <a href="https://www.tiktok.com/@zara" class="hcolor acolor text_size">TIKTOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/zara/" class="hcolor acolor text_size">INSTAGRAM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/Zara" class="hcolor acolor text_size">FACEBOOK</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/ZARA" class="hcolor acolor text_size">TWITTER</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://es.pinterest.com/zaraofficial" class="hcolor acolor text_size">PINTEREST</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.youtube.com/user/zara" class="hcolor acolor text_size">YOUTUBE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="d5">
+        <h5 class="textmargin">NAME AND ADDRESS OF THE MANUFATURE</h5>
+        <h5 class="textmargin">INDUSTRIA DE DISENO TEXTTIL, S.A. (INDITEX, S.A.)</h5>
+        <h5 class="textmargin">AVENDIA DE LA DIPUTACION, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUNA), SPAIN</h5>
+        </div>
+        </div>
+      
+       <!-- sidebarstart -->
+       <div id="mySidebar" class="sidebar">
+        <button href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</button>
+        <button onclick="myFunction()"  id="sidezara" class="dropdown"  >ZARA ATHLETICZ
+            <!-- dropdownstart -->
+            <!-- <div class="dropdown"> -->
+                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="man.html">ABOUT</a>
+                  <a href="man.html">COLLECTION</a>
+                  <a href="man.html">STORIES</a>
+                  <a href="man.html">EXPERIENCE</a>
+                  <a href="man.html">STORES</a>
+                </div>
+              <!-- </div> -->
+              
+              <!-- dropdownend -->
+        </button>
+        <button id="sidewoman" class="dropdown2"  onclick="myFunction2()" >WOMAN
+            <div id="myDropdown2" class="dropdown-content2">
+                <a href="woman.html">COLLECTION</a>
+                <a href="woman.html"> NIGHT POWER COLLECTION <b style="font-size: 8px;">NEW</b></a>
+                <a href="woman.html">BLAZERS</a>
+                <a href="woman.html">DRESSES | JUMPSUITS</a>
+                <a href="woman.html">TOPS|BODYSUITS</a>
+                <a href="woman.html">SHIRTS</a>
+                <a href="woman.html">TROUSERS</a>
+                <a href="woman.html">T-SHIRTS</a>
+                <a href="woman.html">JEANS</a>
+                <a href="woman.html">SKIRTS&nbsp;| &nbsp;SHORTS</a>
+                <a href="woman.html">CO-ORD SETS</a>
+                
+                <a href="#contact">SUITS</a>
+                <a href="#about">KNITWEAR</a>
+                <a href="#contact">SWEATSHIRTS</a>
+              </div>
+        </button>
+        <button id="sideman"  class="dropdown3"  onclick="myFunction3()" >MAN
+            <div id="myDropdown3" class="dropdown-content3">
+                <a href="man.html">NEW</a>
+                <a href="woman.html"> ZARA ATHALETICZ <b style="font-size: 8px;">NEW</b></a>
+                <a href="woman.html">COLLECTION</a>
+                <a href="woman.html">HERITAGE <b style="font-size: 8px;">NEW</b></a>
+                <a href="woman.html">JACKETS</a>
+                <a href="woman.html">OVERSHIRTS</a>
+                <a href="woman.html"> GILETS</a>
+                <a href="woman.html">BLAZERS</a>
+                <a href="woman.html">SUITS</a>
+                <a href="woman.html">T-SHIRTS</a>
+                <a href="woman.html">HOODIES | SWEATSHIRTS</a>
+                <a href="woman.html">TRACKSUITS</a>
+                <a href="woman.html">KNITWEAR</a>
+                <a href="woman.html">POLO SHIRTS</a>
+                
+              </div>
+        </button>
+        <button id="sidekids" class="dropdown4"  onclick="myFunction4()">KIDS
+            <div id="myDropdown4" class="dropdown-content4">
+                <a href="#home">GIRL | 6 - 14 YEARS</a>
+                <a href="login.html"> BOY | 6 - 14 YEARS</a>
+                <a href="#contact"> BABY GIRL | 6 MONTHS - 5 YEARS</a>
+                <a href="#about">BABY BOY | 6 MONTHS  - 5 YEARS</a>
+                <a href="#contact">ACCESSORIES</a>
+                <a href="#contact">ZARASERIES</a>
+                <a href="#contact">BESTSELLERS <b style="font-size: 8px;">NEW</b></a>
+              </div>
+        </button>
+        <button id="sideshoes" class="dropdown5"  onclick="myFunction5()">SHOE&BAGS
+            <div id="myDropdown5" class="dropdown-content5">
+                <a href="#home">WOMAN</a>
+                <a href="login.html"> MAN</a>
+                <a href="#contact">KIDS</a>
+               
+              </div>
+        </button>
+        <button id="sidejoininfo" style="margin-top: 15px;">JOIN INFO</button>
+        <button id="sideinfo">COVID 19 INFO</button>
+        <button id="sideinfo" style="margin-top: 15px;">+INFO</button>
+      </div>
+      <!-- <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      </div> -->
+      
+       <!-- sidebarend -->
+<script>
+    function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+function headclick(){
+   
+   
+    window.location.href="man.html"
+}
+var changeimg=document.getElementById("changeimg");
+var imgbox=document.getElementById("mainimg")
+var imgdata=["https://static.zara.net/photos///2021/I/T/1/p/0267/420/800/2/w/750/0267420800_1_1_1.jpg?ts=1632730334059",
+"https://static.zara.net/photos///2021/I/T/2/p/0639/644/707/2/w/532/0639644707_15_1_1.jpg?ts=1632389495487",
+"https://static.zara.net/photos///2021/I/0/3/p/6357/494/801/202/w/448/6357494801_15_1_1.jpg?ts=1632394213709",
+"https://static.zara.net/photos///contents/mkt/spots/aw21-north-athleticz-newsletter/layout-figma-athleticz-newsletter//aw21-north-athleticz-newsletter.layout-figma-athleticz-newsletter.desktop-6f6583d207ff3a38f91a0a067fb9d2ce3278ae03-FILL-1.529_0.jpg?ts=1632756031442&imwidth=1440"]
+var i=1;
+var leftA=document.getElementById("leftA")
+var rightA=document.getElementById("rightA");
+var body=document.getElementById("container")
+
+function plusDivs(){
+    if(i==1){
+leftA.textContent="ZARA ATHALETICS";
+leftA.href="athelatics.html";
+rightA.href="woman.html";
+rightA.textContent="WOMAN";
+imgbox.style.width="650px";
+imgbox.onclick=function(){
+  window.location.href="man.html"
+}
+
+
+    }
+ else if(i===2){
+    leftA.textContent="MAN";
+    leftA.href="man.html";
+rightA.textContent="WOMAN";
+rightA.href="woman.html";
+imgbox.style.width="600px";
+imgbox.onclick=function(){
+  window.location.href="kids.html"
+}
+
+ }
+ else if(i==3){
+  
+    leftA.textContent="WOMAN";
+rightA.textContent="KIDS";
+leftA.href="woman.html";
+rightA.href="kids.html";
+imgbox.style.width="100%";
+imgbox.style.textOverflow="cover"
+body.style.backgroundColor="black";
+body.style.color="white"
+changeimg.style.marginTop="10px"
+
+changeimg.style.height=""
+imgbox.onclick=function(){
+  window.location.href="Athelatics.html"
+}
+ }
+    else{
+        leftA.textContent="MAN";
+rightA.textContent="KIDS";
+leftA.href="man.html";
+rightA.href="kids.html";
+imgbox.style.width="570px";
+body.style.backgroundColor="white";
+body.style.color="black"
+changeimg.style.marginTop="20%";
+imgbox.onclick=function(){
+  window.location.href="woman.html"
+}
+
+ }
+if(i>3){
+    i=0;
+}
+    if(i>=0){
+       
+changeimg.src=imgdata[i];
+console.log(i)
+i++;  
+    }
+   
+  
+}
+function takeme(){
+    window.location.href="woman.html";
+}
+//sidebarstart
+function openNav() {
+  document.getElementById("mySidebar").style.width = "180px";
+  document.getElementById("body").style.marginLeft = "30px";
+  document.getElementById("container").style.opacity="0.1"
+
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("body").style.marginLeft= "4px";
+document.getElementById("container").style.opacity="1"
+}
+// sidebarend
+// dropdownstart
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#sidezara')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidewoman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideman')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content3");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sidekids')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('#sideshoes')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content5");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+
+  
+}
+// dropdown end
+
+// checkcountcart
+var formdata= JSON.parse(localStorage.getItem('Zara_cart_dresses'))
+var checkcountcart= document.getElementById("checkcountcart")
+
+checkcountcart.textContent="CART("+formdata.length+")";
+
+// fetching login data
+var logindata=JSON.parse( localStorage.getItem("logindata"));
+var Name=logindata[logindata.length-1].name;
+console.log(Name)
+var putname=document.getElementById("loggin");
+putname.textContent=Name;
+
+</script>
+</body>
+
+</html>
